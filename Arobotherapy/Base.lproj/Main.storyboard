@@ -29,6 +29,9 @@
                                             <constraint firstAttribute="height" constant="150" id="CXs-2j-hBs"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="skipIntroView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Mn-ht-bTN"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
