@@ -28,9 +28,10 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="150" id="CXs-2j-hBs"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="Get Started"/>
                                         <connections>
                                             <action selector="skipIntroView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Mn-ht-bTN"/>
+                                            <segue destination="XJp-3W-j68" kind="show" id="jA9-C5-jTW"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -58,6 +59,47 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-84" y="132.68365817091455"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="aG0-br-hpw">
+            <objects>
+                <viewController id="XJp-3W-j68" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YqG-F1-fz2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="iWf-1e-Lzu">
+                                <rect key="frame" x="10" y="30" width="355" height="627"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are about to be shown a short passage  Please read it out loud " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZGe-ZV-XKw">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="477"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rtH-hd-akU">
+                                        <rect key="frame" x="0.0" y="477" width="355" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="VvD-Vk-jGx"/>
+                                        </constraints>
+                                        <state key="normal" title="OK"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ygT-jo-qWt" firstAttribute="bottom" secondItem="iWf-1e-Lzu" secondAttribute="bottom" constant="10" id="2G3-IA-UqM"/>
+                            <constraint firstItem="iWf-1e-Lzu" firstAttribute="top" secondItem="ygT-jo-qWt" secondAttribute="top" constant="10" id="9AP-ih-fTz"/>
+                            <constraint firstAttribute="trailing" secondItem="iWf-1e-Lzu" secondAttribute="trailing" constant="10" id="tQb-bh-T2h"/>
+                            <constraint firstItem="iWf-1e-Lzu" firstAttribute="leading" secondItem="ygT-jo-qWt" secondAttribute="leading" constant="10" id="uf8-8e-ycf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ygT-jo-qWt"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tny-1W-aId" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="637.60000000000002" y="132.68365817091455"/>
         </scene>
     </scenes>
 </document>
