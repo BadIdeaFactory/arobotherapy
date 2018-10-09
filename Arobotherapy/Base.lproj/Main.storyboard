@@ -28,9 +28,10 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="150" id="CXs-2j-hBs"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="Get Started"/>
                                         <connections>
                                             <action selector="skipIntroView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Mn-ht-bTN"/>
+                                            <segue destination="XJp-3W-j68" kind="show" id="jA9-C5-jTW"/>
                                         </connections>
                                     </button>
                                 </subviews>
