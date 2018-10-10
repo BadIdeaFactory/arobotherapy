@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Intro View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Arobotherapy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="IntroViewController" customModule="Arobotherapy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,7 +20,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4dD-S9-A8E">
                                 <rect key="frame" x="10" y="30" width="355" height="627"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qBt-Ou-abK">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qBt-Ou-abK" customClass="I">
                                         <rect key="frame" x="0.0" y="0.0" width="355" height="467"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7V-Lc-pvU">
@@ -30,8 +30,7 @@
                                         </constraints>
                                         <state key="normal" title="Get Started"/>
                                         <connections>
-                                            <action selector="skipIntroView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Mn-ht-bTN"/>
-                                            <segue destination="XJp-3W-j68" kind="show" id="jA9-C5-jTW"/>
+                                            <segue destination="XJp-3W-j68" kind="show" id="SiK-8a-usr"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -60,10 +59,10 @@
             </objects>
             <point key="canvasLocation" x="-84" y="132.68365817091455"/>
         </scene>
-        <!--View Controller-->
+        <!--Passage Instruction View Controller-->
         <scene sceneID="aG0-br-hpw">
             <objects>
-                <viewController id="XJp-3W-j68" sceneMemberID="viewController">
+                <viewController id="XJp-3W-j68" customClass="PassageInstructionViewController" customModule="Arobotherapy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YqG-F1-fz2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -71,7 +70,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="iWf-1e-Lzu">
                                 <rect key="frame" x="10" y="30" width="355" height="627"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are about to be shown a short passage  Please read it out loud " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZGe-ZV-XKw">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are about to be shown a short passage  Please read it out loud " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZGe-ZV-XKw">
                                         <rect key="frame" x="0.0" y="0.0" width="355" height="477"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -84,7 +83,7 @@
                                         </constraints>
                                         <state key="normal" title="OK"/>
                                         <connections>
-                                            <segue destination="QOC-dG-YDS" kind="show" id="5Dc-bX-Ujh"/>
+                                            <segue destination="QOC-dG-YDS" kind="show" id="BRo-qg-RcV"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -104,10 +103,10 @@
             </objects>
             <point key="canvasLocation" x="637.60000000000002" y="132.68365817091455"/>
         </scene>
-        <!--View Controller-->
+        <!--Passage Recording View Controller-->
         <scene sceneID="hjb-VY-z1X">
             <objects>
-                <viewController id="QOC-dG-YDS" sceneMemberID="viewController">
+                <viewController id="QOC-dG-YDS" customClass="PassageRecordingViewController" customModule="Arobotherapy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="keS-jC-jrF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -115,9 +114,13 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="r4L-LF-AAn">
                                 <rect key="frame" x="10" y="30" width="355" height="627"/>
                                 <subviews>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3vu-cx-Whm">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epl-7u-bb5">
                                         <rect key="frame" x="0.0" y="0.0" width="355" height="477"/>
-                                    </scrollView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XGV-eF-ZS9">
                                         <rect key="frame" x="0.0" y="477" width="355" height="150"/>
                                         <subviews>
@@ -128,7 +131,7 @@
                                                 </constraints>
                                                 <state key="normal" title="Back"/>
                                                 <connections>
-                                                    <segue destination="XJp-3W-j68" kind="show" id="bVS-Pv-eSW"/>
+                                                    <segue destination="XJp-3W-j68" kind="show" id="RsO-4E-KMJ"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyE-vR-H68">
@@ -144,12 +147,6 @@
                                         </constraints>
                                     </stackView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="3vu-cx-Whm" firstAttribute="leading" secondItem="r4L-LF-AAn" secondAttribute="leading" id="CVs-bb-kyE"/>
-                                    <constraint firstAttribute="trailing" secondItem="3vu-cx-Whm" secondAttribute="trailing" id="K2f-4F-Mk1"/>
-                                    <constraint firstItem="3vu-cx-Whm" firstAttribute="top" secondItem="r4L-LF-AAn" secondAttribute="top" id="Lgt-rq-uHs"/>
-                                    <constraint firstItem="XGV-eF-ZS9" firstAttribute="top" secondItem="3vu-cx-Whm" secondAttribute="bottom" id="OK7-U9-go3"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -161,6 +158,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qkg-uE-BIy"/>
                     </view>
+                    <connections>
+                        <outlet property="passageTextView" destination="epl-7u-bb5" id="8VP-bL-4Rl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Cc-eh-aiF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -168,6 +168,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="bVS-Pv-eSW"/>
+        <segue reference="RsO-4E-KMJ"/>
     </inferredMetricsTieBreakers>
 </document>

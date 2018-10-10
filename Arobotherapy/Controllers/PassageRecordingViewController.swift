@@ -9,11 +9,13 @@
 import UIKit
 
 class PassageRecordingViewController: UIViewController {
-
+    @IBOutlet weak var passageTextView: UITextView!
+    
+    // MARK: - Properties
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
     
 
