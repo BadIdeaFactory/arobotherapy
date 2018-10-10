@@ -127,6 +127,9 @@
                                                     <constraint firstAttribute="height" constant="150" id="jvA-nZ-IrU"/>
                                                 </constraints>
                                                 <state key="normal" title="Back"/>
+                                                <connections>
+                                                    <segue destination="XJp-3W-j68" kind="show" id="bVS-Pv-eSW"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyE-vR-H68">
                                                 <rect key="frame" x="177.5" y="0.0" width="177.5" height="150"/>
@@ -164,4 +167,7 @@
             <point key="canvasLocation" x="1372" y="132.68365817091455"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="bVS-Pv-eSW"/>
+    </inferredMetricsTieBreakers>
 </document>
