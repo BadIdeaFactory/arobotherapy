@@ -112,30 +112,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="r4L-LF-AAn">
-                                <rect key="frame" x="33" y="56" width="240" height="158"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="r4L-LF-AAn">
+                                <rect key="frame" x="10" y="30" width="355" height="627"/>
                                 <subviews>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3vu-cx-Whm">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3vu-cx-Whm">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="477"/>
                                     </scrollView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XGV-eF-ZS9">
-                                        <rect key="frame" x="0.0" y="128" width="240" height="30"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XGV-eF-ZS9">
+                                        <rect key="frame" x="0.0" y="477" width="355" height="150"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iEY-vw-Mce">
-                                                <rect key="frame" x="0.0" y="0.0" width="194" height="30"/>
-                                                <state key="normal" title="Button"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="177.5" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="jvA-nZ-IrU"/>
+                                                </constraints>
+                                                <state key="normal" title="Back"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyE-vR-H68">
-                                                <rect key="frame" x="194" y="0.0" width="46" height="30"/>
-                                                <state key="normal" title="Button"/>
+                                                <rect key="frame" x="177.5" y="0.0" width="177.5" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="LQ1-TH-wHA"/>
+                                                </constraints>
+                                                <state key="normal" title="Continue"/>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="gyE-vR-H68" firstAttribute="width" secondItem="iEY-vw-Mce" secondAttribute="width" id="Vno-4s-1cB"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="3vu-cx-Whm" firstAttribute="leading" secondItem="r4L-LF-AAn" secondAttribute="leading" id="CVs-bb-kyE"/>
+                                    <constraint firstAttribute="trailing" secondItem="3vu-cx-Whm" secondAttribute="trailing" id="K2f-4F-Mk1"/>
+                                    <constraint firstItem="3vu-cx-Whm" firstAttribute="top" secondItem="r4L-LF-AAn" secondAttribute="top" id="Lgt-rq-uHs"/>
+                                    <constraint firstItem="XGV-eF-ZS9" firstAttribute="top" secondItem="3vu-cx-Whm" secondAttribute="bottom" id="OK7-U9-go3"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qkg-uE-BIy" firstAttribute="bottom" secondItem="r4L-LF-AAn" secondAttribute="bottom" constant="10" id="Ygg-Ge-p4r"/>
+                            <constraint firstItem="qkg-uE-BIy" firstAttribute="trailing" secondItem="r4L-LF-AAn" secondAttribute="trailing" constant="10" id="cPL-dJ-YEb"/>
+                            <constraint firstItem="r4L-LF-AAn" firstAttribute="top" secondItem="qkg-uE-BIy" secondAttribute="top" constant="10" id="q2j-b8-PHI"/>
+                            <constraint firstItem="r4L-LF-AAn" firstAttribute="leading" secondItem="qkg-uE-BIy" secondAttribute="leading" constant="10" id="vcw-eY-u37"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="qkg-uE-BIy"/>
                     </view>
                 </viewController>
