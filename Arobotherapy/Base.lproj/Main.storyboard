@@ -291,18 +291,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GDZ-NM-AdS">
-                                <rect key="frame" x="132" y="138" width="76" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GDZ-NM-AdS">
+                                <rect key="frame" x="10" y="30" width="355" height="627"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dn3-k4-KUs">
-                                        <rect key="frame" x="0.0" y="0.0" width="76" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="627"/>
                                         <state key="normal" title="Thank you!"/>
                                     </button>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="diM-O3-nX2" firstAttribute="bottom" secondItem="GDZ-NM-AdS" secondAttribute="bottom" constant="10" id="V6w-rW-8nb"/>
+                            <constraint firstItem="diM-O3-nX2" firstAttribute="trailing" secondItem="GDZ-NM-AdS" secondAttribute="trailing" constant="10" id="VUa-QB-NvG"/>
+                            <constraint firstItem="GDZ-NM-AdS" firstAttribute="leading" secondItem="diM-O3-nX2" secondAttribute="leading" constant="10" id="YvM-Ar-YvU"/>
+                            <constraint firstItem="GDZ-NM-AdS" firstAttribute="top" secondItem="diM-O3-nX2" secondAttribute="top" constant="10" id="hcs-0Z-reE"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="diM-O3-nX2"/>
                     </view>
                 </viewController>
