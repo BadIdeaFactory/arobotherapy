@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D02C79EC216D52C800487826 /* PassageInstructionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02C79EB216D52C800487826 /* PassageInstructionViewController.swift */; };
+		D02C79EE216E547000487826 /* PassageRecordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02C79ED216E547000487826 /* PassageRecordingViewController.swift */; };
 		D05C6E2C216D2EF8002695F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05C6E2B216D2EF8002695F1 /* AppDelegate.swift */; };
 		D05C6E2E216D2EF8002695F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05C6E2D216D2EF8002695F1 /* ViewController.swift */; };
 		D05C6E31216D2EF8002695F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D05C6E2F216D2EF8002695F1 /* Main.storyboard */; };
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D02C79EB216D52C800487826 /* PassageInstructionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassageInstructionViewController.swift; sourceTree = "<group>"; };
+		D02C79ED216E547000487826 /* PassageRecordingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassageRecordingViewController.swift; sourceTree = "<group>"; };
 		D05C6E28216D2EF8002695F1 /* Arobotherapy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Arobotherapy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D05C6E2B216D2EF8002695F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D05C6E2D216D2EF8002695F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +84,8 @@
 				D05C6E2B216D2EF8002695F1 /* AppDelegate.swift */,
 				D05C6E2D216D2EF8002695F1 /* ViewController.swift */,
 				D05C6E2F216D2EF8002695F1 /* Main.storyboard */,
+				D02C79EB216D52C800487826 /* PassageInstructionViewController.swift */,
+				D02C79ED216E547000487826 /* PassageRecordingViewController.swift */,
 				D05C6E32216D2EFA002695F1 /* Assets.xcassets */,
 				D05C6E34216D2EFA002695F1 /* LaunchScreen.storyboard */,
 				D05C6E37216D2EFA002695F1 /* Info.plist */,
@@ -197,8 +203,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D02C79EC216D52C800487826 /* PassageInstructionViewController.swift in Sources */,
 				D05C6E2E216D2EF8002695F1 /* ViewController.swift in Sources */,
 				D05C6E2C216D2EF8002695F1 /* AppDelegate.swift in Sources */,
+				D02C79EE216E547000487826 /* PassageRecordingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
