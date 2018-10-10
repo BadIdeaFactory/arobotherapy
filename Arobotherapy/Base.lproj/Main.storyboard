@@ -283,6 +283,41 @@
             </objects>
             <point key="canvasLocation" x="2815" y="140"/>
         </scene>
+        <!--Thank You View Controller-->
+        <scene sceneID="V3w-aU-ikw">
+            <objects>
+                <viewController id="prb-9B-auF" customClass="ThankYouViewController" customModule="Arobotherapy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Ph-PI-3Ds">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GDZ-NM-AdS">
+                                <rect key="frame" x="10" y="30" width="355" height="627"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dn3-k4-KUs">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="627"/>
+                                        <state key="normal" title="Thank you!"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="ZZe-CD-d4H"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="diM-O3-nX2" firstAttribute="bottom" secondItem="GDZ-NM-AdS" secondAttribute="bottom" constant="10" id="V6w-rW-8nb"/>
+                            <constraint firstItem="diM-O3-nX2" firstAttribute="trailing" secondItem="GDZ-NM-AdS" secondAttribute="trailing" constant="10" id="VUa-QB-NvG"/>
+                            <constraint firstItem="GDZ-NM-AdS" firstAttribute="leading" secondItem="diM-O3-nX2" secondAttribute="leading" constant="10" id="YvM-Ar-YvU"/>
+                            <constraint firstItem="GDZ-NM-AdS" firstAttribute="top" secondItem="diM-O3-nX2" secondAttribute="top" constant="10" id="hcs-0Z-reE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="diM-O3-nX2"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xvR-qg-dU9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3582" y="140"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="RsO-4E-KMJ"/>
