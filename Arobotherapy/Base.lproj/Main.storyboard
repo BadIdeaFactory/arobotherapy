@@ -140,6 +140,9 @@
                                                     <constraint firstAttribute="height" constant="150" id="LQ1-TH-wHA"/>
                                                 </constraints>
                                                 <state key="normal" title="Continue"/>
+                                                <connections>
+                                                    <segue destination="gCW-eq-IHe" kind="show" id="xfi-wx-gLz"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -165,6 +168,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Cc-eh-aiF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1372" y="132.68365817091455"/>
+        </scene>
+        <!--Interview Instruction View Controller-->
+        <scene sceneID="yET-FC-h0F">
+            <objects>
+                <viewController id="gCW-eq-IHe" customClass="InterviewInstructionViewController" customModule="Arobotherapy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Coc-B6-3yg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="z4c-yq-6Pl">
+                                <rect key="frame" x="10" y="30" width="355" height="627"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are about to be asked some questions  Please answer them out loud" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mgb-0I-0f7">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="527"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qLz-cI-EBh">
+                                        <rect key="frame" x="0.0" y="527" width="355" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="XQZ-Rh-o0A"/>
+                                        </constraints>
+                                        <state key="normal" title="OK"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="qLz-cI-EBh" firstAttribute="leading" secondItem="z4c-yq-6Pl" secondAttribute="leading" id="Omo-jv-ftB"/>
+                                    <constraint firstAttribute="trailing" secondItem="qLz-cI-EBh" secondAttribute="trailing" id="tMD-ld-652"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="z4c-yq-6Pl" firstAttribute="leading" secondItem="vxv-pN-lDN" secondAttribute="leading" constant="10" id="3Rs-ZJ-WZ2"/>
+                            <constraint firstItem="z4c-yq-6Pl" firstAttribute="top" secondItem="vxv-pN-lDN" secondAttribute="top" constant="10" id="JCI-qG-bkh"/>
+                            <constraint firstItem="vxv-pN-lDN" firstAttribute="bottom" secondItem="z4c-yq-6Pl" secondAttribute="bottom" constant="10" id="QIb-VP-5DL"/>
+                            <constraint firstAttribute="trailing" secondItem="z4c-yq-6Pl" secondAttribute="trailing" constant="10" id="hGm-kA-PUe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vxv-pN-lDN"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HyN-0i-YI6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2106" y="133"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
