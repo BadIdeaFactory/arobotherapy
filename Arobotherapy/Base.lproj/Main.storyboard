@@ -192,6 +192,9 @@
                                             <constraint firstAttribute="height" constant="100" id="XQZ-Rh-o0A"/>
                                         </constraints>
                                         <state key="normal" title="OK"/>
+                                        <connections>
+                                            <segue destination="80G-05-Yhh" kind="show" id="DR9-la-54t"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -213,6 +216,72 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HyN-0i-YI6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2106" y="133"/>
+        </scene>
+        <!--Interview View Controller-->
+        <scene sceneID="NWe-Ox-Jq3">
+            <objects>
+                <viewController id="80G-05-Yhh" customClass="InterviewViewController" customModule="Arobotherapy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="efM-pJ-yOz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Js5-Ly-DDM">
+                                <rect key="frame" x="10" y="30" width="355" height="627"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pem-vE-zmJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="477"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y8Y-et-wfh">
+                                        <rect key="frame" x="0.0" y="477" width="355" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="0ks-4u-3Xg"/>
+                                        </constraints>
+                                        <state key="normal" title="Repeat"/>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M7z-tj-Go8">
+                                        <rect key="frame" x="0.0" y="552" width="355" height="75"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VuY-hr-vNN">
+                                                <rect key="frame" x="0.0" y="0.0" width="177.5" height="75"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="75" id="mcH-1u-ueS"/>
+                                                </constraints>
+                                                <state key="normal" title="Back"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQq-cG-aR9">
+                                                <rect key="frame" x="177.5" y="0.0" width="177.5" height="75"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="75" id="EgC-Ph-hzJ"/>
+                                                </constraints>
+                                                <state key="normal" title="Next"/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="AQq-cG-aR9" firstAttribute="width" secondItem="VuY-hr-vNN" secondAttribute="width" id="ONS-Mz-QkL"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="M7z-tj-Go8" firstAttribute="top" secondItem="Y8Y-et-wfh" secondAttribute="bottom" id="yMa-dM-2Ba"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Js5-Ly-DDM" firstAttribute="top" secondItem="9B4-bu-2RT" secondAttribute="top" constant="10" id="Xh3-ja-dNl"/>
+                            <constraint firstItem="9B4-bu-2RT" firstAttribute="bottom" secondItem="Js5-Ly-DDM" secondAttribute="bottom" constant="10" id="heR-ar-Kpf"/>
+                            <constraint firstItem="9B4-bu-2RT" firstAttribute="trailing" secondItem="Js5-Ly-DDM" secondAttribute="trailing" constant="10" id="quU-Sb-ECu"/>
+                            <constraint firstItem="Js5-Ly-DDM" firstAttribute="leading" secondItem="9B4-bu-2RT" secondAttribute="leading" constant="10" id="z1f-Kx-nEr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9B4-bu-2RT"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m1N-v0-27J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2815" y="140"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
