@@ -192,6 +192,9 @@
                                             <constraint firstAttribute="height" constant="100" id="XQZ-Rh-o0A"/>
                                         </constraints>
                                         <state key="normal" title="OK"/>
+                                        <connections>
+                                            <segue destination="80G-05-Yhh" kind="show" id="DR9-la-54t"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
