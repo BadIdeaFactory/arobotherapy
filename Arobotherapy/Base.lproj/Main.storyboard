@@ -222,38 +222,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Js5-Ly-DDM">
-                                <rect key="frame" x="94" y="158" width="240" height="158"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Js5-Ly-DDM">
+                                <rect key="frame" x="10" y="30" width="355" height="627"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1md-Fr-2WY">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M7z-tj-Go8">
-                                        <rect key="frame" x="0.0" y="128" width="240" height="30"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pem-vE-zmJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="477"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y8Y-et-wfh">
+                                        <rect key="frame" x="0.0" y="477" width="355" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="0ks-4u-3Xg"/>
+                                        </constraints>
+                                        <state key="normal" title="Repeat"/>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M7z-tj-Go8">
+                                        <rect key="frame" x="0.0" y="552" width="355" height="75"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VuY-hr-vNN">
-                                                <rect key="frame" x="0.0" y="0.0" width="159" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="177.5" height="75"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="75" id="mcH-1u-ueS"/>
+                                                </constraints>
                                                 <state key="normal" title="Back"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y8Y-et-wfh">
-                                                <rect key="frame" x="159" y="0.0" width="49" height="30"/>
-                                                <state key="normal" title="Repeat"/>
-                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQq-cG-aR9">
-                                                <rect key="frame" x="208" y="0.0" width="32" height="30"/>
+                                                <rect key="frame" x="177.5" y="0.0" width="177.5" height="75"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="75" id="EgC-Ph-hzJ"/>
+                                                </constraints>
                                                 <state key="normal" title="Next"/>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="AQq-cG-aR9" firstAttribute="width" secondItem="VuY-hr-vNN" secondAttribute="width" id="ONS-Mz-QkL"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="M7z-tj-Go8" firstAttribute="top" secondItem="Y8Y-et-wfh" secondAttribute="bottom" id="yMa-dM-2Ba"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Js5-Ly-DDM" firstAttribute="top" secondItem="9B4-bu-2RT" secondAttribute="top" constant="10" id="Xh3-ja-dNl"/>
+                            <constraint firstItem="9B4-bu-2RT" firstAttribute="bottom" secondItem="Js5-Ly-DDM" secondAttribute="bottom" constant="10" id="heR-ar-Kpf"/>
+                            <constraint firstItem="9B4-bu-2RT" firstAttribute="trailing" secondItem="Js5-Ly-DDM" secondAttribute="trailing" constant="10" id="quU-Sb-ECu"/>
+                            <constraint firstItem="Js5-Ly-DDM" firstAttribute="leading" secondItem="9B4-bu-2RT" secondAttribute="leading" constant="10" id="z1f-Kx-nEr"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="9B4-bu-2RT"/>
                     </view>
                 </viewController>
