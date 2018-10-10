@@ -140,6 +140,9 @@
                                                     <constraint firstAttribute="height" constant="150" id="LQ1-TH-wHA"/>
                                                 </constraints>
                                                 <state key="normal" title="Continue"/>
+                                                <connections>
+                                                    <segue destination="gCW-eq-IHe" kind="show" id="xfi-wx-gLz"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
