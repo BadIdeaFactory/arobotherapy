@@ -166,6 +166,39 @@
             </objects>
             <point key="canvasLocation" x="1372" y="132.68365817091455"/>
         </scene>
+        <!--Interview Instruction View Controller-->
+        <scene sceneID="yET-FC-h0F">
+            <objects>
+                <viewController id="gCW-eq-IHe" customClass="InterviewInstructionViewController" customModule="Arobotherapy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Coc-B6-3yg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="z4c-yq-6Pl">
+                                <rect key="frame" x="132" y="151" width="324" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are about to be asked some questions  Please answer them out loud" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mgb-0I-0f7">
+                                        <rect key="frame" x="0.0" y="0.0" width="324" height="61"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qLz-cI-EBh">
+                                        <rect key="frame" x="0.0" y="61" width="324" height="30"/>
+                                        <state key="normal" title="OK"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="vxv-pN-lDN"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HyN-0i-YI6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2106" y="133"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="RsO-4E-KMJ"/>
