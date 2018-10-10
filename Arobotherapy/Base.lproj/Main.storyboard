@@ -297,6 +297,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dn3-k4-KUs">
                                         <rect key="frame" x="0.0" y="0.0" width="355" height="627"/>
                                         <state key="normal" title="Thank you!"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="ZZe-CD-d4H"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
