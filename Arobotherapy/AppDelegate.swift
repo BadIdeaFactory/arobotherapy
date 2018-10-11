@@ -12,13 +12,32 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var passages: [Passage] = []
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        loadPassages()
+        
         return true
     }
-
+    
+    func loadPassages() {
+        let fm = FileManager.default
+        let path = Bundle.main.resourcePath! + "/Library/Passages"
+        do {
+            let items = try fm.contentsOfDirectory(atPath: path)
+            
+            for item in items {
+                let filepath = Bundle.main.resourcePath! + "/Library/Passages/" + item
+                let contents = try String(contentsOfFile: filepath)
+                let passage = Passage(id: item, text: contents)
+                passages.append(passage)
+            }
+        } catch {
+            // failed to read directory – bad permissions, perhaps?
+        }
+    }
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
