@@ -12,6 +12,7 @@
 		D039FADB216E951F00ADACA3 /* InterviewInstructionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D039FADA216E951F00ADACA3 /* InterviewInstructionViewController.swift */; };
 		D039FADD216E993800ADACA3 /* InterviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D039FADC216E993800ADACA3 /* InterviewViewController.swift */; };
 		D039FADF216EA0D800ADACA3 /* ThankYouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D039FADE216EA0D800ADACA3 /* ThankYouViewController.swift */; };
+		D039FAE1216EEC9200ADACA3 /* Library in Resources */ = {isa = PBXBuildFile; fileRef = D039FAE0216EEC9200ADACA3 /* Library */; };
 		D05C6E2C216D2EF8002695F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05C6E2B216D2EF8002695F1 /* AppDelegate.swift */; };
 		D05C6E2E216D2EF8002695F1 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05C6E2D216D2EF8002695F1 /* IntroViewController.swift */; };
 		D05C6E31216D2EF8002695F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D05C6E2F216D2EF8002695F1 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 		D039FADA216E951F00ADACA3 /* InterviewInstructionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewInstructionViewController.swift; sourceTree = "<group>"; };
 		D039FADC216E993800ADACA3 /* InterviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewViewController.swift; sourceTree = "<group>"; };
 		D039FADE216EA0D800ADACA3 /* ThankYouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThankYouViewController.swift; sourceTree = "<group>"; };
+		D039FAE0216EEC9200ADACA3 /* Library */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Library; sourceTree = "<group>"; };
 		D05C6E28216D2EF8002695F1 /* Arobotherapy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Arobotherapy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D05C6E2B216D2EF8002695F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D05C6E2D216D2EF8002695F1 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 		D05C6E2A216D2EF8002695F1 /* Arobotherapy */ = {
 			isa = PBXGroup;
 			children = (
+				D039FAE0216EEC9200ADACA3 /* Library */,
 				D05C6E2B216D2EF8002695F1 /* AppDelegate.swift */,
 				D039FAD9216E5E5D00ADACA3 /* Controllers */,
 				D05C6E2F216D2EF8002695F1 /* Main.storyboard */,
@@ -200,6 +203,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D039FAE1216EEC9200ADACA3 /* Library in Resources */,
 				D05C6E36216D2EFA002695F1 /* LaunchScreen.storyboard in Resources */,
 				D05C6E33216D2EFA002695F1 /* Assets.xcassets in Resources */,
 				D05C6E31216D2EF8002695F1 /* Main.storyboard in Resources */,
