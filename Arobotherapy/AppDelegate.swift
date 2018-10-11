@@ -12,6 +12,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var passages: [Passage] = []
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -29,9 +30,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             for item in items {
                 let filepath = Bundle.main.resourcePath! + "/Library/Passages/" + item
                 let contents = try String(contentsOfFile: filepath)
+                let passage = Passage(id: item, text: contents)
+                passages.append(passage)
             }
         } catch {
-            
             // failed to read directory – bad permissions, perhaps?
         }
     }
