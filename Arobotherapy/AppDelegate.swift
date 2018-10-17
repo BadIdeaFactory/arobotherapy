@@ -17,6 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         let interviewModelController = InterviewModelController()
         interviewModelController.loadData()
+        
+        if let introViewController = window?.rootViewController as? IntroViewController {
+            introViewController.interviewModelController = interviewModelController
+        }
         return true
     }
     
