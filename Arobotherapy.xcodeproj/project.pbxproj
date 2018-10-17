@@ -21,6 +21,7 @@
 		D05C6E33216D2EFA002695F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D05C6E32216D2EFA002695F1 /* Assets.xcassets */; };
 		D05C6E36216D2EFA002695F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D05C6E34216D2EFA002695F1 /* LaunchScreen.storyboard */; };
 		D05C6E41216D2EFA002695F1 /* ArobotherapyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05C6E40216D2EFA002695F1 /* ArobotherapyTests.swift */; };
+		D0A947272177C40400F7D4CC /* InterviewModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A947262177C40400F7D4CC /* InterviewModelController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		D05C6E3C216D2EFA002695F1 /* ArobotherapyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArobotherapyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D05C6E40216D2EFA002695F1 /* ArobotherapyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArobotherapyTests.swift; sourceTree = "<group>"; };
 		D05C6E42216D2EFA002695F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0A947262177C40400F7D4CC /* InterviewModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewModelController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				D05C6E2D216D2EF8002695F1 /* IntroViewController.swift */,
 				D02C79EB216D52C800487826 /* PassageInstructionViewController.swift */,
 				D02C79ED216E547000487826 /* PassageRecordingViewController.swift */,
+				D0A947262177C40400F7D4CC /* InterviewModelController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D039FAE8216EF91100ADACA3 /* Passage.swift in Sources */,
+				D0A947272177C40400F7D4CC /* InterviewModelController.swift in Sources */,
 				D02C79EC216D52C800487826 /* PassageInstructionViewController.swift in Sources */,
 				D039FADB216E951F00ADACA3 /* InterviewInstructionViewController.swift in Sources */,
 				D039FAEA216EFB0000ADACA3 /* Question.swift in Sources */,
