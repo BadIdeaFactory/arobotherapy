@@ -8,10 +8,10 @@
 
 import UIKit
 
-class IntroViewController: UIViewController {
+class IntroViewController: UIViewController, InterviewProtocol {
 
     // MARK: Properties
-    var interviewModelController:InterviewModelController!
+    var interviewModelController:InterviewModelController = InterviewModelController()
     
     override func viewDidLoad() {
         super.viewDidLoad()

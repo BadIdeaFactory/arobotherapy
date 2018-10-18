@@ -8,7 +8,10 @@
 
 import UIKit
 
-class ThankYouViewController: UIViewController {
+class ThankYouViewController: UIViewController, InterviewProtocol {
+
+    // MARK: Properties
+    var interviewModelController:InterviewModelController = InterviewModelController()
 
     override func viewDidLoad() {
         super.viewDidLoad()

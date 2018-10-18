@@ -8,7 +8,10 @@
 
 import UIKit
 
-class PassageInstructionViewController: UIViewController {
+class PassageInstructionViewController: UIViewController, InterviewProtocol {
+    
+    // MARK: Properties
+    var interviewModelController:InterviewModelController = InterviewModelController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
