@@ -162,7 +162,7 @@
                         <viewLayoutGuide key="safeArea" id="qkg-uE-BIy"/>
                     </view>
                     <connections>
-                        <outlet property="passageTextView" destination="epl-7u-bb5" id="8VP-bL-4Rl"/>
+                        <outlet property="passageTextView" destination="epl-7u-bb5" id="tl0-Pl-dXZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Cc-eh-aiF" userLabel="First Responder" sceneMemberID="firstResponder"/>
