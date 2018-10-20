@@ -8,15 +8,23 @@
 
 import UIKit
 
-class IntroViewController: UIViewController {
+class IntroViewController: UIViewController, InterviewProtocol {
 
     // MARK: Properties
+    var interviewModelController:InterviewModelController = InterviewModelController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        interviewModelController.generateScript()
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-    // MARK: Actions
+    
+    // MARK: Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if var interviewProtocolViewController = segue.destination as? InterviewProtocol {
+            interviewProtocolViewController.interviewModelController = interviewModelController
+        }
+    }
 }
 

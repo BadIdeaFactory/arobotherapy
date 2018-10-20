@@ -12,50 +12,16 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var passages: [Passage] = []
-    var questions: [Question] = []
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        loadPassages()
-        loadQuestions()
-
+        let interviewModelController = InterviewModelController()
+        interviewModelController.loadData()
+        
+        if let introViewController = window?.rootViewController as? IntroViewController {
+            introViewController.interviewModelController = interviewModelController
+        }
         return true
-    }
-    
-    func loadPassages() {
-        let fm = FileManager.default
-        let path = Bundle.main.resourcePath! + "/Library/Passages"
-        do {
-            let items = try fm.contentsOfDirectory(atPath: path)
-            
-            for item in items {
-                let filepath = Bundle.main.resourcePath! + "/Library/Passages/" + item
-                let contents = try String(contentsOfFile: filepath)
-                let passage = Passage(id: item, text: contents)
-                passages.append(passage)
-            }
-        } catch {
-            // failed to read directory – bad permissions, perhaps?
-        }
-    }
-    
-    func loadQuestions() {
-        let fm = FileManager.default
-        let path = Bundle.main.resourcePath! + "/Library/Questions/Text"
-        do {
-            let items = try fm.contentsOfDirectory(atPath: path)
-            
-            for item in items {
-                let filepath = Bundle.main.resourcePath! + "/Library/Questions/Text/" + item
-                let contents = try String(contentsOfFile: filepath)
-                let audioUrl = Bundle.main.resourcePath! + "/Library/Questions/Audio/" + item.replacingOccurrences(of: ".txt", with: ".mp3")
-                let question = Question(id: item, text: contents, audioUrl: audioUrl)
-                questions.append(question)
-            }
-        } catch {
-            // failed to read directory – bad permissions, perhaps?
-        }
     }
     
     func applicationWillResignActive(_ application: UIApplication) {

@@ -8,25 +8,24 @@
 
 import UIKit
 
-class PassageRecordingViewController: UIViewController {
-    @IBOutlet weak var passageTextView: UITextView!
+class PassageRecordingViewController: UIViewController, InterviewProtocol {
+    var interviewModelController:InterviewModelController = InterviewModelController()
     
-    // MARK: - Properties
+    // MARK: Properties
+    @IBOutlet weak var passageTextView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print(interviewModelController.chosenPassage)
+        print(interviewModelController.chosenPassage!.text)
+        passageTextView.text = interviewModelController.chosenPassage!.text
     }
     
-
-    /*
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if var interviewProtocolViewController = segue.destination as? InterviewProtocol {
+            interviewProtocolViewController.interviewModelController = interviewModelController
+        }
     }
-    */
 
 }
