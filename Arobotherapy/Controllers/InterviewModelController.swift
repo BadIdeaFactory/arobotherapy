@@ -22,6 +22,23 @@ class InterviewModelController {
         if(passages.count > 0) {
             self.chosenPassage = passages.randomElement()!
         }
+        
+        // Iterate through the questions to generate the script
+        var questionPool = questionBlocks
+        var mayHaveMore = true
+        while(mayHaveMore) {
+            mayHaveMore = false;
+            for (blockIndex, questionBlock) in questionPool.enumerated() {
+                if(questionBlock.isEmpty) {
+                    continue
+                }
+                let nextQuestion = questionPool[blockIndex].randomElement()!
+                chosenQuestions.append(nextQuestion)
+                questionPool[blockIndex] = questionPool[blockIndex]
+                    .filter() { $0.id != nextQuestion.id }
+                mayHaveMore = true
+            }
+        }
     }
     
     func loadData() {
@@ -110,7 +127,7 @@ class InterviewModelController {
     func getItemsInPath(path: String) -> [String] {
         let fm = FileManager.default
         do {
-            let items = try fm.contentsOfDirectory(atPath: path)
+            let items = try fm.contentsOfDirectory(atPath: path).sorted()
             return items
         } catch {
             return []
