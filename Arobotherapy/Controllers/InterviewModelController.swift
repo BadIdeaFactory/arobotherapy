@@ -10,7 +10,7 @@ import UIKit
 
 class InterviewModelController {
     var passages: [Passage] = []
-    var questions: [Question] = []
+    var questionBlocks: [[Question]] = []
     
     var chosenPassage:Passage?
     var chosenQuestions: [Question] = []
@@ -34,47 +34,83 @@ class InterviewModelController {
             return
         }
 
-        let fm = FileManager.default
         let path = Bundle.main.resourcePath! + "/Library/Passages"
-        do {
-            let items = try fm.contentsOfDirectory(atPath: path)
-            
-            for item in items {
-                if(item.suffix(4) != ".txt") {
-                    continue
-                }
-                let filepath = Bundle.main.resourcePath! + "/Library/Passages/" + item
-                let contents = try String(contentsOfFile: filepath)
-                let passage = Passage(id: item, text: contents)
-                passages.append(passage)
+        let items = getItemsInPath(path: path)
+        for item in items {
+            if(item.suffix(4) != ".txt") {
+                continue
             }
-        } catch {
-            // failed to read directory – bad permissions, perhaps?
+            let filePath = Bundle.main.resourcePath! + "/Library/Passages/" + item
+            let contents = loadContentFromFile(filePath: filePath)
+            let passage = Passage(id: item, text: contents)
+            passages.append(passage)
         }
     }
     
     func loadQuestions() {
-        if(questions.count != 0) {
+        if(!questionBlocks.isEmpty) {
             return
         }
-
         let fm = FileManager.default
         let path = Bundle.main.resourcePath! + "/Library/Questions/Text"
+        let items = getItemsInPath(path: path)
+        var blockCount = 0
+        
+        for item in items {
+            let itemPath = Bundle.main.resourcePath! + "/Library/Questions/Text/" + item
+            var isDir : ObjCBool = false
+            if(fm.fileExists(atPath: itemPath, isDirectory: &isDir)) {
+                if(isDir.boolValue) {
+                    let blockItems = getItemsInPath(path: itemPath)
+                    blockCount += 1
+                    addItemsToQuestionBlock(index: blockCount, items: blockItems, prefix: item)
+                } else {
+                    addItemToQuestionBlock(index: 0, item: item)
+                }
+            }
+        }
+    }
+    
+    func addItemsToQuestionBlock(index: Int, items: [String], prefix: String = "" ) {
+        for item in items {
+            addItemToQuestionBlock(index: index, item: item, prefix: prefix)
+        }
+    }
+    
+    func addItemToQuestionBlock(index: Int, item: String, prefix: String = "" ) {
+        if(item.suffix(4) != ".txt") {
+            return
+        }
+        let itemPath = Bundle.main.resourcePath! + "/Library/Questions/Text/"
+            + (prefix.isEmpty ? "" : prefix + "/")
+            + item
+        let contents = loadContentFromFile(filePath: itemPath)
+        let audioUrl = itemPath
+            .replacingOccurrences(of: "Text", with: "Audio")
+            .replacingOccurrences(of: ".txt", with: ".mp3")
+        let question = Question(id: item, text: contents, audioUrl: audioUrl)
+        
+        if(!questionBlocks.indices.contains(index)) {
+            questionBlocks.insert([Question](), at: index)
+        }
+        questionBlocks[index].append(question)
+    }
+    
+    func loadContentFromFile(filePath: String) -> String {
+        do {
+            return try String(contentsOfFile: filePath)
+        } catch {
+            return ""
+        }
+    }
+    
+    func getItemsInPath(path: String) -> [String] {
+        let fm = FileManager.default
         do {
             let items = try fm.contentsOfDirectory(atPath: path)
-            
-            for item in items {
-                if(item.suffix(4) != ".txt") {
-                    continue
-                }
-                let filepath = Bundle.main.resourcePath! + "/Library/Questions/Text/" + item
-                let contents = try String(contentsOfFile: filepath)
-                let audioUrl = Bundle.main.resourcePath! + "/Library/Questions/Audio/" + item.replacingOccurrences(of: ".txt", with: ".mp3")
-                let question = Question(id: item, text: contents, audioUrl: audioUrl)
-                questions.append(question)
-            }
+            return items
         } catch {
-            // failed to read directory – bad permissions, perhaps?
+            return []
         }
     }
 }
