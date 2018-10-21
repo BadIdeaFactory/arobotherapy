@@ -51,6 +51,9 @@ class InterviewModelController {
         if(!questionBlocks.isEmpty) {
             return
         }
+        // We need to initialize the zero index since it is a special case
+        questionBlocks.append([])
+        
         let fm = FileManager.default
         let path = Bundle.main.resourcePath! + "/Library/Questions/Text"
         let items = getItemsInPath(path: path)
