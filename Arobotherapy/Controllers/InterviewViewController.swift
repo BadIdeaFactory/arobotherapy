@@ -19,7 +19,7 @@ class InterviewViewController: UIViewController, InterviewProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        currentQuestionIndex = 0
+        currentQuestionIndex = -1
         renderNextQuestion()
     }
     // MARK: - Actions
@@ -31,6 +31,10 @@ class InterviewViewController: UIViewController, InterviewProtocol {
         }
     }
     
+    @IBAction func backButtonPressed(_ sender: Any) {
+        renderPreviousQuestion()
+    }
+    
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if var interviewProtocolViewController = segue.destination as? InterviewProtocol {
@@ -39,18 +43,18 @@ class InterviewViewController: UIViewController, InterviewProtocol {
     }
     
     func renderNextQuestion() {
-        if(interviewModelController.chosenQuestions.count <= currentQuestionIndex) {
+        currentQuestionIndex += 1
+        if(currentQuestionIndex >= interviewModelController.chosenQuestions.count) {
             return triggerNextSegue()
         }
         let nextQuestion = interviewModelController.chosenQuestions[currentQuestionIndex]
         interviewTextLabel.text = nextQuestion.text
-        currentQuestionIndex += 1
     }
     
     func renderPreviousQuestion() {
         currentQuestionIndex -= 1
-        if(interviewModelController.chosenQuestions.count <= currentQuestionIndex) {
-            return triggerNextSegue()
+        if(currentQuestionIndex < 0) {
+            return triggerBackSegue()
         }
         let nextQuestion = interviewModelController.chosenQuestions[currentQuestionIndex]
         interviewTextLabel.text = nextQuestion.text
@@ -58,6 +62,10 @@ class InterviewViewController: UIViewController, InterviewProtocol {
     
     func triggerNextSegue() {
         performSegue(withIdentifier: "interviewFinishedSegue", sender: interviewNextButton)
+    }
+    
+    func triggerBackSegue() {
+        performSegue(withIdentifier: "interviewBackSegue", sender: interviewNextButton)
     }
     
     func isInterviewFinished() -> Bool {
