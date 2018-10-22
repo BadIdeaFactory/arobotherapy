@@ -257,6 +257,9 @@
                                                     <constraint firstAttribute="height" constant="75" id="EgC-Ph-hzJ"/>
                                                 </constraints>
                                                 <state key="normal" title="Next"/>
+                                                <connections>
+                                                    <action selector="nextButtonPressed:" destination="80G-05-Yhh" eventType="touchUpInside" id="wVM-0o-MEP"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -278,6 +281,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9B4-bu-2RT"/>
                     </view>
+                    <connections>
+                        <outlet property="interviewBackButton" destination="VuY-hr-vNN" id="TVi-iq-ooI"/>
+                        <outlet property="interviewNextButton" destination="AQq-cG-aR9" id="dI1-Bt-YJb"/>
+                        <outlet property="interviewTextLabel" destination="Pem-vE-zmJ" id="4CP-xn-M3t"/>
+                        <segue destination="prb-9B-auF" kind="show" identifier="interviewFinishedSegue" id="yp3-9C-Sno"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m1N-v0-27J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
