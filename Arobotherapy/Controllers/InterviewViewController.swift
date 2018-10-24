@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftySound
 
 class InterviewViewController: UIViewController, InterviewProtocol {
 
@@ -48,7 +49,8 @@ class InterviewViewController: UIViewController, InterviewProtocol {
             return triggerNextSegue()
         }
         let nextQuestion = interviewModelController.chosenQuestions[currentQuestionIndex]
-        interviewTextLabel.text = nextQuestion.text
+        renderQuestion(question: nextQuestion)
+
     }
     
     func renderPreviousQuestion() {
@@ -57,7 +59,19 @@ class InterviewViewController: UIViewController, InterviewProtocol {
             return triggerBackSegue()
         }
         let nextQuestion = interviewModelController.chosenQuestions[currentQuestionIndex]
-        interviewTextLabel.text = nextQuestion.text
+        renderQuestion(question: nextQuestion)
+    }
+    
+    func playQuestionAudio(question: Question) {
+        Sound.stopAll()
+        if let audioUrl = URL(string: question.audioUrl) {
+            Sound.play(url: audioUrl)
+        }
+    }
+    
+    func renderQuestion(question: Question) {
+        interviewTextLabel.text = question.text
+        playQuestionAudio(question: question)
     }
     
     func triggerNextSegue() {
