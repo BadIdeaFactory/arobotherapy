@@ -1,16 +1,20 @@
 PODS:
+  - Recorder (0.2.0)
   - SwiftySound (1.0.0)
 
 DEPENDENCIES:
+  - Recorder
   - SwiftySound
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Recorder
     - SwiftySound
 
 SPEC CHECKSUMS:
+  Recorder: 3137f2a340ac626732caec17625043bdb7f8e299
   SwiftySound: b9c3370956fd4ed65ed79d45563070077a50a2cd
 
-PODFILE CHECKSUM: 64182791a0b5db90c84ebf8556f795a075d911fa
+PODFILE CHECKSUM: 77dd16840366c95223292fcf7b840869e1860186
 
 COCOAPODS: 1.5.3

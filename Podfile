@@ -7,6 +7,7 @@ target 'Arobotherapy' do
 
   # Pods for Arobotherapy
   pod 'SwiftySound'
+  pod 'Recorder'
 
   target 'ArobotherapyTests' do
     inherit! :search_paths

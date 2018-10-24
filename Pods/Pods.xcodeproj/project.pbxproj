@@ -7,32 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		42B2B572C2CE0BFE014C05ECD01030D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A8016F6A05B02D6A150134BC0E5ECD /* Foundation.framework */; };
-		51A9A79F31B3C4A476838B105E758536 /* Pods-Arobotherapy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 254A645BE9AC846F664521D2AFB5B005 /* Pods-Arobotherapy-dummy.m */; };
-		78ED6C11AE21B888DAF9E353BD253126 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A8F7DE2424F5EC1C12409BAE50CE6AA /* AVFoundation.framework */; };
-		900A1673542941ADD404814558A5FE31 /* SwiftySound-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C637B5DCCC7BA46C9811133255DFCC43 /* SwiftySound-dummy.m */; };
-		96D1AD0657740052C1A94B78B13803BF /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FB45F6AF751F7BE5F2A747A25041BD /* Sound.swift */; };
+		21B19928944432505C824DE0DC38BE76 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE47E2ADA6A9CF3B837FF043DCBFF5A /* Sound.swift */; };
+		28E40554D77EDC8A56BA6FE53DDD6A07 /* Pods-Arobotherapy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 254A645BE9AC846F664521D2AFB5B005 /* Pods-Arobotherapy-dummy.m */; };
+		39B6973EAA3581C69B2635064DB3F5EC /* Recorder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A67A1D97DD9CB38D846C55CD274A76D /* Recorder-dummy.m */; };
+		45FE15A7B5DD7298C5BF386708FC9577 /* Recording.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C7067CE945D7F1609589DE1A440867 /* Recording.swift */; };
+		4EDE660B5102DDB4ACE8260807C098FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A8016F6A05B02D6A150134BC0E5ECD /* Foundation.framework */; };
+		52BD24CB630D29B62AC399B08363A093 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A8F7DE2424F5EC1C12409BAE50CE6AA /* AVFoundation.framework */; };
+		80E5F88F5C46E7ABCAE1C65C2E77BBCB /* Recorder.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 297D44A6A7927C64AB159260B36FEB6D /* Recorder.bundle */; };
+		8A5F704BF6D905C9F156CE8ADEB22C80 /* SwiftySound-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B0132AEBEE447DA4A497E6E595239D56 /* SwiftySound-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F37EE39B644F53F964BB2F06E2EC7BD /* Pods-Arobotherapy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FDFB0E124749A85C147BB47AE1AE6A7E /* Pods-Arobotherapy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95D2BF7C42671A343A014F1BA3A39214 /* SwiftySound-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B471384974A200DA78C1318F85297568 /* SwiftySound-dummy.m */; };
 		9C3414A94C536914ADD2DD9772DFDD7E /* Pods-ArobotherapyTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FD6223A49BA5287970AC6F413D48B2E /* Pods-ArobotherapyTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F54A1275CD412A41BB0E944C8E9B15E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A8016F6A05B02D6A150134BC0E5ECD /* Foundation.framework */; };
 		A9883196B56D9A102F5C2DC57C0858AC /* Pods-ArobotherapyTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA73A20972DBDB8128D7B3D3E9BFD9C /* Pods-ArobotherapyTests-dummy.m */; };
-		AD22D8F25EF7E3EF681CFB57583D9009 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A8016F6A05B02D6A150134BC0E5ECD /* Foundation.framework */; };
-		B18C56ECB3D72C6200FDF2A8E30823D0 /* SwiftySound-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D7EC492B508CAB7FB3F9DC409E1BD932 /* SwiftySound-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C8B1ABC96C0AD7137A478CEB05315D21 /* Pods-Arobotherapy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FDFB0E124749A85C147BB47AE1AE6A7E /* Pods-Arobotherapy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6A58B8B2495E13DCBC81989877AA22B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A8016F6A05B02D6A150134BC0E5ECD /* Foundation.framework */; };
 		D70335FC0BC4210982315DB36B5FCEBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A8016F6A05B02D6A150134BC0E5ECD /* Foundation.framework */; };
+		F84A223FB1E7B2C60D34EA8811014972 /* Recorder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D43F42891A2C7CA1E32B4E09B0D2E6ED /* Recorder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4129422AD13F1745BB8B97D9FCA9411B /* PBXContainerItemProxy */ = {
+		687205E574EAC207B2C8629B6957922D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2F1877DE4A2C82D07C15FE3D1E22DB63;
+			remoteGlobalIDString = DB5EF5AA5E2ACC580CBF80EE6E13142C;
 			remoteInfo = SwiftySound;
+		};
+		6B1F912C08587D3543EC0B73C5E828B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B11E235D3CC100DD6B3CAC5F50B6F526;
+			remoteInfo = Recorder;
+		};
+		B88E15739AF9862E5A326B2AE5340319 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E47868199E1D289D85220CE53F58E4CC;
+			remoteInfo = "Recorder-Recorder";
 		};
 		F36CB7B104B33ED1580E42A8F946FA29 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 78516D0CCB4D576F200DB991E301D5DA;
+			remoteGlobalIDString = A30634E1CBC9D510CC1208208AB96C78;
 			remoteInfo = "Pods-Arobotherapy";
 		};
 /* End PBXContainerItemProxy section */
@@ -42,52 +61,77 @@
 		0FD6223A49BA5287970AC6F413D48B2E /* Pods-ArobotherapyTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ArobotherapyTests-umbrella.h"; sourceTree = "<group>"; };
 		21E18365C681E04F086570C9A3DD073D /* Pods-ArobotherapyTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ArobotherapyTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		254A645BE9AC846F664521D2AFB5B005 /* Pods-Arobotherapy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Arobotherapy-dummy.m"; sourceTree = "<group>"; };
+		2763AA456320AF3C488CC05C1CE1B79B /* ResourceBundle-Recorder-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Recorder-Info.plist"; sourceTree = "<group>"; };
 		27BD319EF0F277BCC70E2E1086032F8C /* Pods-Arobotherapy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Arobotherapy.debug.xcconfig"; sourceTree = "<group>"; };
+		297D44A6A7927C64AB159260B36FEB6D /* Recorder.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Recorder.bundle; path = "Recorder-Recorder.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F6C495B0122583762255E50A92F4EE7 /* Pods-ArobotherapyTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ArobotherapyTests.modulemap"; sourceTree = "<group>"; };
 		35FC9FAFB2A1479044A59714C99F3383 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A8F7DE2424F5EC1C12409BAE50CE6AA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		3C9EA9A3813639826B3F8DFEDA9463AC /* Pods-Arobotherapy-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Arobotherapy-resources.sh"; sourceTree = "<group>"; };
+		3CE9A70115F2C9436223354B9706308F /* SwiftySound.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftySound.xcconfig; sourceTree = "<group>"; };
+		474E121708E7D045370E43674ABEE67F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47A4085BDC34E85F177DB1B102B57141 /* Recorder.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Recorder.modulemap; sourceTree = "<group>"; };
+		50C7067CE945D7F1609589DE1A440867 /* Recording.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Recording.swift; path = Pod/Classes/Recording.swift; sourceTree = "<group>"; };
 		51A2A6F3F70AAD4AEB2888466E06AD26 /* Pods-Arobotherapy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Arobotherapy.release.xcconfig"; sourceTree = "<group>"; };
 		5F7A1BBFBD032EC88C1DFAFE37A628F0 /* Pods-Arobotherapy-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Arobotherapy-frameworks.sh"; sourceTree = "<group>"; };
-		6319CF7529C32B2F478C3A374B22F483 /* SwiftySound.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftySound.framework; path = SwiftySound.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		63B6BDF5CD839523069156DA06154F7E /* SwiftySound.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftySound.modulemap; sourceTree = "<group>"; };
-		8C7ED57A2E2F992F16975AAE1ECF702E /* SwiftySound-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftySound-prefix.pch"; sourceTree = "<group>"; };
+		662F9E447ED1E17011BE8DBBF60A9BA9 /* SwiftySound.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftySound.modulemap; sourceTree = "<group>"; };
+		6EC18D695BBB834D3DFEB939A1C973D1 /* SwiftySound.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftySound.framework; path = SwiftySound.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81013C31E326B5B6A4E41ADC9EE6BEF2 /* Recorder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Recorder.framework; path = Recorder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B516AC52932740EB59E7A31FCEC05DC /* Recorder-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Recorder-prefix.pch"; sourceTree = "<group>"; };
 		8CC7BA2A3861BBC0286589E4ABF581E1 /* Pods-ArobotherapyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ArobotherapyTests.debug.xcconfig"; sourceTree = "<group>"; };
-		9164C350A58524C714355F46B87320B7 /* Pods_Arobotherapy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Arobotherapy.framework; path = "Pods-Arobotherapy.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9A67A1D97DD9CB38D846C55CD274A76D /* Recorder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Recorder-dummy.m"; sourceTree = "<group>"; };
 		9BBC5DDAE4E88670F620020BE3DA3C9C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A2017C294DDC1B8877AB8DF6BF68AFF5 /* SwiftySound.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftySound.xcconfig; sourceTree = "<group>"; };
 		A2A8016F6A05B02D6A150134BC0E5ECD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		A7DD54EBDE5BDBAB9FC8A799A684986C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9D51542245581BD522C92F58259B10C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF7D57A4423F658F3EE99D75D23985B3 /* Pods-Arobotherapy-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Arobotherapy-acknowledgements.plist"; sourceTree = "<group>"; };
+		B0132AEBEE447DA4A497E6E595239D56 /* SwiftySound-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftySound-umbrella.h"; sourceTree = "<group>"; };
+		B471384974A200DA78C1318F85297568 /* SwiftySound-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftySound-dummy.m"; sourceTree = "<group>"; };
+		BAE47E2ADA6A9CF3B837FF043DCBFF5A /* Sound.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Sound.swift; path = Sources/Sound.swift; sourceTree = "<group>"; };
+		C1003F08045BCC1328737C205B83DDE6 /* Pods_Arobotherapy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Arobotherapy.framework; path = "Pods-Arobotherapy.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2F03CB50B56335B3FDB9FB525880679 /* Pods-ArobotherapyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ArobotherapyTests.release.xcconfig"; sourceTree = "<group>"; };
-		C637B5DCCC7BA46C9811133255DFCC43 /* SwiftySound-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftySound-dummy.m"; sourceTree = "<group>"; };
-		C6FB45F6AF751F7BE5F2A747A25041BD /* Sound.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Sound.swift; path = Sources/Sound.swift; sourceTree = "<group>"; };
+		CA5A602B81828CE5BF059C6A8EDA4D3B /* Recorder.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Recorder.xcconfig; sourceTree = "<group>"; };
 		CCCD9F6E29B8856CCD64C320478CD415 /* Pods-ArobotherapyTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ArobotherapyTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		D7EC492B508CAB7FB3F9DC409E1BD932 /* SwiftySound-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftySound-umbrella.h"; sourceTree = "<group>"; };
+		D43F42891A2C7CA1E32B4E09B0D2E6ED /* Recorder-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Recorder-umbrella.h"; sourceTree = "<group>"; };
+		D45E2275F276149BBCA67EE3F52A2411 /* Pods_ArobotherapyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ArobotherapyTests.framework; path = "Pods-ArobotherapyTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D93B1D0204299229FC7EB18D973AD168 /* Pods-Arobotherapy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Arobotherapy.modulemap"; sourceTree = "<group>"; };
 		DCA73A20972DBDB8128D7B3D3E9BFD9C /* Pods-ArobotherapyTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ArobotherapyTests-dummy.m"; sourceTree = "<group>"; };
-		E07818CB52E8250077207092A9414FD2 /* Pods_ArobotherapyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ArobotherapyTests.framework; path = "Pods-ArobotherapyTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3F23F9DBEE1B18DBFC4368304767716 /* Pods-ArobotherapyTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ArobotherapyTests-frameworks.sh"; sourceTree = "<group>"; };
 		E794E8C0CB398C7DC4F2664CCBDAF490 /* Pods-ArobotherapyTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ArobotherapyTests-resources.sh"; sourceTree = "<group>"; };
+		EF6897B0B978899C6A54DB864BF54282 /* SwiftySound-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftySound-prefix.pch"; sourceTree = "<group>"; };
 		FDFB0E124749A85C147BB47AE1AE6A7E /* Pods-Arobotherapy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Arobotherapy-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		39B839A5D779AED47254BE433A1C6E33 /* Frameworks */ = {
+		0679BD05BDC17522560675B927C3CB54 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD22D8F25EF7E3EF681CFB57583D9009 /* Foundation.framework in Frameworks */,
+				D6A58B8B2495E13DCBC81989877AA22B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E63465B1A05129C03E4882AC21ED7B61 /* Frameworks */ = {
+		8945D63B81DC9D944FC24FDE0151F6B1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78ED6C11AE21B888DAF9E353BD253126 /* AVFoundation.framework in Frameworks */,
-				42B2B572C2CE0BFE014C05ECD01030D7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CD721635B14B9FD3398D9A507D06E02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EDE660B5102DDB4ACE8260807C098FB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E009BE4DF26D61CD7835E4EFF61C5A97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52BD24CB630D29B62AC399B08363A093 /* AVFoundation.framework in Frameworks */,
+				9F54A1275CD412A41BB0E944C8E9B15E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,28 +199,16 @@
 			path = "Target Support Files/Pods-Arobotherapy";
 			sourceTree = "<group>";
 		};
-		62E233B123AA462EC4BACAE33BC3A1FF /* Support Files */ = {
+		7BF289D442196A8786C0A9E3606C38B4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A7DD54EBDE5BDBAB9FC8A799A684986C /* Info.plist */,
-				63B6BDF5CD839523069156DA06154F7E /* SwiftySound.modulemap */,
-				A2017C294DDC1B8877AB8DF6BF68AFF5 /* SwiftySound.xcconfig */,
-				C637B5DCCC7BA46C9811133255DFCC43 /* SwiftySound-dummy.m */,
-				8C7ED57A2E2F992F16975AAE1ECF702E /* SwiftySound-prefix.pch */,
-				D7EC492B508CAB7FB3F9DC409E1BD932 /* SwiftySound-umbrella.h */,
+				C1003F08045BCC1328737C205B83DDE6 /* Pods_Arobotherapy.framework */,
+				D45E2275F276149BBCA67EE3F52A2411 /* Pods_ArobotherapyTests.framework */,
+				297D44A6A7927C64AB159260B36FEB6D /* Recorder.bundle */,
+				81013C31E326B5B6A4E41ADC9EE6BEF2 /* Recorder.framework */,
+				6EC18D695BBB834D3DFEB939A1C973D1 /* SwiftySound.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftySound";
-			sourceTree = "<group>";
-		};
-		6D0057A1A0172F693AB073A870C38A99 /* SwiftySound */ = {
-			isa = PBXGroup;
-			children = (
-				C6FB45F6AF751F7BE5F2A747A25041BD /* Sound.swift */,
-				62E233B123AA462EC4BACAE33BC3A1FF /* Support Files */,
-			);
-			name = SwiftySound;
-			path = SwiftySound;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -184,18 +216,20 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				9804E6EA3E05744B7B8ED985D1E67D26 /* Pods */,
-				DEACADD5C1A1B05712F5C31DA8CD3D5A /* Products */,
+				EAAABB1044EAC83A7BD4C8CE94EB234A /* Pods */,
+				7BF289D442196A8786C0A9E3606C38B4 /* Products */,
 				53C4BABD5D8188D4EBDF1491343F33CF /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		9804E6EA3E05744B7B8ED985D1E67D26 /* Pods */ = {
+		AF055AD94F9AD4018C156D6EAF9DDDEA /* SwiftySound */ = {
 			isa = PBXGroup;
 			children = (
-				6D0057A1A0172F693AB073A870C38A99 /* SwiftySound */,
+				BAE47E2ADA6A9CF3B837FF043DCBFF5A /* Sound.swift */,
+				D360E9A5384BA1CF247C706E7D5A505C /* Support Files */,
 			);
-			name = Pods;
+			name = SwiftySound;
+			path = SwiftySound;
 			sourceTree = "<group>";
 		};
 		B85ADDD365B9DBF7697B00F27B8790A9 /* iOS */ = {
@@ -207,24 +241,62 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		DEACADD5C1A1B05712F5C31DA8CD3D5A /* Products */ = {
+		BB2F808AB1CFBC772FFEC32DB4D0A09B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9164C350A58524C714355F46B87320B7 /* Pods_Arobotherapy.framework */,
-				E07818CB52E8250077207092A9414FD2 /* Pods_ArobotherapyTests.framework */,
-				6319CF7529C32B2F478C3A374B22F483 /* SwiftySound.framework */,
+				A9D51542245581BD522C92F58259B10C /* Info.plist */,
+				47A4085BDC34E85F177DB1B102B57141 /* Recorder.modulemap */,
+				CA5A602B81828CE5BF059C6A8EDA4D3B /* Recorder.xcconfig */,
+				9A67A1D97DD9CB38D846C55CD274A76D /* Recorder-dummy.m */,
+				8B516AC52932740EB59E7A31FCEC05DC /* Recorder-prefix.pch */,
+				D43F42891A2C7CA1E32B4E09B0D2E6ED /* Recorder-umbrella.h */,
+				2763AA456320AF3C488CC05C1CE1B79B /* ResourceBundle-Recorder-Info.plist */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/Recorder";
+			sourceTree = "<group>";
+		};
+		D360E9A5384BA1CF247C706E7D5A505C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				474E121708E7D045370E43674ABEE67F /* Info.plist */,
+				662F9E447ED1E17011BE8DBBF60A9BA9 /* SwiftySound.modulemap */,
+				3CE9A70115F2C9436223354B9706308F /* SwiftySound.xcconfig */,
+				B471384974A200DA78C1318F85297568 /* SwiftySound-dummy.m */,
+				EF6897B0B978899C6A54DB864BF54282 /* SwiftySound-prefix.pch */,
+				B0132AEBEE447DA4A497E6E595239D56 /* SwiftySound-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftySound";
+			sourceTree = "<group>";
+		};
+		EAAABB1044EAC83A7BD4C8CE94EB234A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F2B9DCF313FB70D282AEF1D77C8B88B4 /* Recorder */,
+				AF055AD94F9AD4018C156D6EAF9DDDEA /* SwiftySound */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F2B9DCF313FB70D282AEF1D77C8B88B4 /* Recorder */ = {
+			isa = PBXGroup;
+			children = (
+				50C7067CE945D7F1609589DE1A440867 /* Recording.swift */,
+				BB2F808AB1CFBC772FFEC32DB4D0A09B /* Support Files */,
+			);
+			name = Recorder;
+			path = Recorder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1936E3938236B57B221648F41B0CCD90 /* Headers */ = {
+		088A4D0A497D012498EE92F8D7921C86 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B18C56ECB3D72C6200FDF2A8E30823D0 /* SwiftySound-umbrella.h in Headers */,
+				8F37EE39B644F53F964BB2F06E2EC7BD /* Pods-Arobotherapy-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,25 +308,72 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		61CF1B325BB46F3BA86E12E8D621B05F /* Headers */ = {
+		6352C3F8CD37F1458557DA16124E84B8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8B1ABC96C0AD7137A478CEB05315D21 /* Pods-Arobotherapy-umbrella.h in Headers */,
+				8A5F704BF6D905C9F156CE8ADEB22C80 /* SwiftySound-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BBF55F32B4915DF88236898DBF11D00 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F84A223FB1E7B2C60D34EA8811014972 /* Recorder-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2F1877DE4A2C82D07C15FE3D1E22DB63 /* SwiftySound */ = {
+		A30634E1CBC9D510CC1208208AB96C78 /* Pods-Arobotherapy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B051D07981F27E1F2B82AC20C4264B46 /* Build configuration list for PBXNativeTarget "SwiftySound" */;
+			buildConfigurationList = 90C5B55FA66E830E412ECCA429D82422 /* Build configuration list for PBXNativeTarget "Pods-Arobotherapy" */;
 			buildPhases = (
-				1936E3938236B57B221648F41B0CCD90 /* Headers */,
-				86F1989BBF6ED9AC84488CD3788C75FF /* Sources */,
-				E63465B1A05129C03E4882AC21ED7B61 /* Frameworks */,
-				A314F2A440F90962549E7F5EC20BF2E4 /* Resources */,
+				088A4D0A497D012498EE92F8D7921C86 /* Headers */,
+				AABA043098E8174D9DC869EA424616AA /* Sources */,
+				0679BD05BDC17522560675B927C3CB54 /* Frameworks */,
+				52EA6BEBE0AAF68DF709907F13C59813 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFF0B1451E4C3B858CD1FE4E586A15A5 /* PBXTargetDependency */,
+				F0BAA79A90D610F61350F554EE269AB2 /* PBXTargetDependency */,
+			);
+			name = "Pods-Arobotherapy";
+			productName = "Pods-Arobotherapy";
+			productReference = C1003F08045BCC1328737C205B83DDE6 /* Pods_Arobotherapy.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B11E235D3CC100DD6B3CAC5F50B6F526 /* Recorder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37D15E252E13109816DFDAFA2E9ECEE3 /* Build configuration list for PBXNativeTarget "Recorder" */;
+			buildPhases = (
+				9BBF55F32B4915DF88236898DBF11D00 /* Headers */,
+				72C75BB7851574421439B0F4ED9E9B58 /* Sources */,
+				8CD721635B14B9FD3398D9A507D06E02 /* Frameworks */,
+				7DE52A372A048EB89BCAB6D57155A191 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				530B585F8CC0AE5381ADF4B7F6B5749B /* PBXTargetDependency */,
+			);
+			name = Recorder;
+			productName = Recorder;
+			productReference = 81013C31E326B5B6A4E41ADC9EE6BEF2 /* Recorder.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DB5EF5AA5E2ACC580CBF80EE6E13142C /* SwiftySound */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00FD55F15887C901515A2B69C8E84F71 /* Build configuration list for PBXNativeTarget "SwiftySound" */;
+			buildPhases = (
+				6352C3F8CD37F1458557DA16124E84B8 /* Headers */,
+				3CA554CFF7E5D9CFCDDC85A2B5E687D1 /* Sources */,
+				E009BE4DF26D61CD7835E4EFF61C5A97 /* Frameworks */,
+				C9FCC2D95FD45D2E65A572F4E07CBDE6 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -262,27 +381,25 @@
 			);
 			name = SwiftySound;
 			productName = SwiftySound;
-			productReference = 6319CF7529C32B2F478C3A374B22F483 /* SwiftySound.framework */;
+			productReference = 6EC18D695BBB834D3DFEB939A1C973D1 /* SwiftySound.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		78516D0CCB4D576F200DB991E301D5DA /* Pods-Arobotherapy */ = {
+		E47868199E1D289D85220CE53F58E4CC /* Recorder-Recorder */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 82084A3826953D0667ECA57228F15CE3 /* Build configuration list for PBXNativeTarget "Pods-Arobotherapy" */;
+			buildConfigurationList = 69DD560DD52C555575D0CF2D67B921E6 /* Build configuration list for PBXNativeTarget "Recorder-Recorder" */;
 			buildPhases = (
-				61CF1B325BB46F3BA86E12E8D621B05F /* Headers */,
-				D3D69263698D0A5D1F1C467AD03B97AA /* Sources */,
-				39B839A5D779AED47254BE433A1C6E33 /* Frameworks */,
-				EF3F67EEB1769F312D45F8D8C9123725 /* Resources */,
+				3974D02ECC628A109A8293B428995B62 /* Sources */,
+				8945D63B81DC9D944FC24FDE0151F6B1 /* Frameworks */,
+				6AE5A6C922B825B50C173821F75DF5E3 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				861C695F637E2AB61C5F59F4C614AF0A /* PBXTargetDependency */,
 			);
-			name = "Pods-Arobotherapy";
-			productName = "Pods-Arobotherapy";
-			productReference = 9164C350A58524C714355F46B87320B7 /* Pods_Arobotherapy.framework */;
-			productType = "com.apple.product-type.framework";
+			name = "Recorder-Recorder";
+			productName = "Recorder-Recorder";
+			productReference = 297D44A6A7927C64AB159260B36FEB6D /* Recorder.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 		EF0E7CD1036A8E1042B324D75015F343 /* Pods-ArobotherapyTests */ = {
 			isa = PBXNativeTarget;
@@ -300,7 +417,7 @@
 			);
 			name = "Pods-ArobotherapyTests";
 			productName = "Pods-ArobotherapyTests";
-			productReference = E07818CB52E8250077207092A9414FD2 /* Pods_ArobotherapyTests.framework */;
+			productReference = D45E2275F276149BBCA67EE3F52A2411 /* Pods_ArobotherapyTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -320,13 +437,15 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = DEACADD5C1A1B05712F5C31DA8CD3D5A /* Products */;
+			productRefGroup = 7BF289D442196A8786C0A9E3606C38B4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				78516D0CCB4D576F200DB991E301D5DA /* Pods-Arobotherapy */,
+				A30634E1CBC9D510CC1208208AB96C78 /* Pods-Arobotherapy */,
 				EF0E7CD1036A8E1042B324D75015F343 /* Pods-ArobotherapyTests */,
-				2F1877DE4A2C82D07C15FE3D1E22DB63 /* SwiftySound */,
+				B11E235D3CC100DD6B3CAC5F50B6F526 /* Recorder */,
+				E47868199E1D289D85220CE53F58E4CC /* Recorder-Recorder */,
+				DB5EF5AA5E2ACC580CBF80EE6E13142C /* SwiftySound */,
 			);
 		};
 /* End PBXProject section */
@@ -339,14 +458,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A314F2A440F90962549E7F5EC20BF2E4 /* Resources */ = {
+		52EA6BEBE0AAF68DF709907F13C59813 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EF3F67EEB1769F312D45F8D8C9123725 /* Resources */ = {
+		6AE5A6C922B825B50C173821F75DF5E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DE52A372A048EB89BCAB6D57155A191 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80E5F88F5C46E7ABCAE1C65C2E77BBCB /* Recorder.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9FCC2D95FD45D2E65A572F4E07CBDE6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -356,12 +490,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		86F1989BBF6ED9AC84488CD3788C75FF /* Sources */ = {
+		3974D02ECC628A109A8293B428995B62 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96D1AD0657740052C1A94B78B13803BF /* Sound.swift in Sources */,
-				900A1673542941ADD404814558A5FE31 /* SwiftySound-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CA554CFF7E5D9CFCDDC85A2B5E687D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21B19928944432505C824DE0DC38BE76 /* Sound.swift in Sources */,
+				95D2BF7C42671A343A014F1BA3A39214 /* SwiftySound-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72C75BB7851574421439B0F4ED9E9B58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39B6973EAA3581C69B2635064DB3F5EC /* Recorder-dummy.m in Sources */,
+				45FE15A7B5DD7298C5BF386708FC9577 /* Recording.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AABA043098E8174D9DC869EA424616AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28E40554D77EDC8A56BA6FE53DDD6A07 /* Pods-Arobotherapy-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,35 +531,75 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D3D69263698D0A5D1F1C467AD03B97AA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				51A9A79F31B3C4A476838B105E758536 /* Pods-Arobotherapy-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		861C695F637E2AB61C5F59F4C614AF0A /* PBXTargetDependency */ = {
+		530B585F8CC0AE5381ADF4B7F6B5749B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = SwiftySound;
-			target = 2F1877DE4A2C82D07C15FE3D1E22DB63 /* SwiftySound */;
-			targetProxy = 4129422AD13F1745BB8B97D9FCA9411B /* PBXContainerItemProxy */;
+			name = "Recorder-Recorder";
+			target = E47868199E1D289D85220CE53F58E4CC /* Recorder-Recorder */;
+			targetProxy = B88E15739AF9862E5A326B2AE5340319 /* PBXContainerItemProxy */;
 		};
 		D443DC9439695AB9171EDF8D6D9DF2D4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Arobotherapy";
-			target = 78516D0CCB4D576F200DB991E301D5DA /* Pods-Arobotherapy */;
+			target = A30634E1CBC9D510CC1208208AB96C78 /* Pods-Arobotherapy */;
 			targetProxy = F36CB7B104B33ED1580E42A8F946FA29 /* PBXContainerItemProxy */;
+		};
+		DFF0B1451E4C3B858CD1FE4E586A15A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Recorder;
+			target = B11E235D3CC100DD6B3CAC5F50B6F526 /* Recorder */;
+			targetProxy = 6B1F912C08587D3543EC0B73C5E828B1 /* PBXContainerItemProxy */;
+		};
+		F0BAA79A90D610F61350F554EE269AB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftySound;
+			target = DB5EF5AA5E2ACC580CBF80EE6E13142C /* SwiftySound */;
+			targetProxy = 687205E574EAC207B2C8629B6957922D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1587B3496D446C32B758E0E9C1A69517 /* Debug */ = {
+		1208ABC62E5890855D1F3E46DAD30FB7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A2017C294DDC1B8877AB8DF6BF68AFF5 /* SwiftySound.xcconfig */;
+			baseConfigurationReference = CA5A602B81828CE5BF059C6A8EDA4D3B /* Recorder.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Recorder/Recorder-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Recorder/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Recorder/Recorder.modulemap";
+				PRODUCT_MODULE_NAME = Recorder;
+				PRODUCT_NAME = Recorder;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		31DBAF5C7109E47B5C104A8F91721B4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CE9A70115F2C9436223354B9706308F /* SwiftySound.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -434,7 +632,59 @@
 			};
 			name = Debug;
 		};
-		246E4A785A6EC64F4E1409FE8E64C1AA /* Release */ = {
+		4552871E4AF2C210C42B80A71ADBEF81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA5A602B81828CE5BF059C6A8EDA4D3B /* Recorder.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Recorder";
+				INFOPLIST_FILE = "Target Support Files/Recorder/ResourceBundle-Recorder-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = Recorder;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		4FFE41208927EB137079D54C7206FF4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CE9A70115F2C9436223354B9706308F /* SwiftySound.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftySound/SwiftySound-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftySound/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftySound/SwiftySound.modulemap";
+				PRODUCT_MODULE_NAME = SwiftySound;
+				PRODUCT_NAME = SwiftySound;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6ED786C1FE7AAD3E4BB8B40957BF3EDF /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 51A2A6F3F70AAD4AEB2888466E06AD26 /* Pods-Arobotherapy.release.xcconfig */;
 			buildSettings = {
@@ -466,42 +716,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		303D223D9CB91F316D4569EBB1FAFFBD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A2017C294DDC1B8877AB8DF6BF68AFF5 /* SwiftySound.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftySound/SwiftySound-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftySound/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SwiftySound/SwiftySound.modulemap";
-				PRODUCT_MODULE_NAME = SwiftySound;
-				PRODUCT_NAME = SwiftySound;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -572,6 +786,79 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		AD6EB2929D7F1D3EA5480F5D938CA0BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27BD319EF0F277BCC70E2E1086032F8C /* Pods-Arobotherapy.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Arobotherapy/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Arobotherapy/Pods-Arobotherapy.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B7499A429AA52330A0AFEB8B213A603A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA5A602B81828CE5BF059C6A8EDA4D3B /* Recorder.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Recorder/Recorder-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Recorder/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Recorder/Recorder.modulemap";
+				PRODUCT_MODULE_NAME = Recorder;
+				PRODUCT_NAME = Recorder;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -714,47 +1001,34 @@
 			};
 			name = Debug;
 		};
-		E94214502EC8873C761C89762604FFDC /* Debug */ = {
+		F2C7DB1C728B1B35421DA30C61989099 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27BD319EF0F277BCC70E2E1086032F8C /* Pods-Arobotherapy.debug.xcconfig */;
+			baseConfigurationReference = CA5A602B81828CE5BF059C6A8EDA4D3B /* Recorder.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Arobotherapy/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Arobotherapy/Pods-Arobotherapy.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Recorder";
+				INFOPLIST_FILE = "Target Support Files/Recorder/ResourceBundle-Recorder-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = Recorder;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				WRAPPER_EXTENSION = bundle;
 			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		00FD55F15887C901515A2B69C8E84F71 /* Build configuration list for PBXNativeTarget "SwiftySound" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31DBAF5C7109E47B5C104A8F91721B4A /* Debug */,
+				4FFE41208927EB137079D54C7206FF4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -764,11 +1038,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		82084A3826953D0667ECA57228F15CE3 /* Build configuration list for PBXNativeTarget "Pods-Arobotherapy" */ = {
+		37D15E252E13109816DFDAFA2E9ECEE3 /* Build configuration list for PBXNativeTarget "Recorder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E94214502EC8873C761C89762604FFDC /* Debug */,
-				246E4A785A6EC64F4E1409FE8E64C1AA /* Release */,
+				B7499A429AA52330A0AFEB8B213A603A /* Debug */,
+				1208ABC62E5890855D1F3E46DAD30FB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69DD560DD52C555575D0CF2D67B921E6 /* Build configuration list for PBXNativeTarget "Recorder-Recorder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4552871E4AF2C210C42B80A71ADBEF81 /* Debug */,
+				F2C7DB1C728B1B35421DA30C61989099 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90C5B55FA66E830E412ECCA429D82422 /* Build configuration list for PBXNativeTarget "Pods-Arobotherapy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD6EB2929D7F1D3EA5480F5D938CA0BA /* Debug */,
+				6ED786C1FE7AAD3E4BB8B40957BF3EDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -778,15 +1070,6 @@
 			buildConfigurations = (
 				CFC5359659B7BC1BB1649B6FE69D55A4 /* Debug */,
 				CA5D3C1AB03DA23DF708028159B45B11 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B051D07981F27E1F2B82AC20C4264B46 /* Build configuration list for PBXNativeTarget "SwiftySound" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1587B3496D446C32B758E0E9C1A69517 /* Debug */,
-				303D223D9CB91F316D4569EBB1FAFFBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
