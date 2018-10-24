@@ -240,6 +240,9 @@
                                             <constraint firstAttribute="height" constant="75" id="0ks-4u-3Xg"/>
                                         </constraints>
                                         <state key="normal" title="Repeat"/>
+                                        <connections>
+                                            <action selector="repeatButtonPressed:" destination="80G-05-Yhh" eventType="touchUpInside" id="vi8-ke-ddk"/>
+                                        </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M7z-tj-Go8">
                                         <rect key="frame" x="0.0" y="552" width="355" height="75"/>

@@ -36,6 +36,10 @@ class InterviewViewController: UIViewController, InterviewProtocol {
         renderPreviousQuestion()
     }
     
+    @IBAction func repeatButtonPressed(_ sender: Any) {
+        repeatCurrentQuestion()
+    }
+    
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if var interviewProtocolViewController = segue.destination as? InterviewProtocol {
@@ -61,7 +65,12 @@ class InterviewViewController: UIViewController, InterviewProtocol {
         let nextQuestion = interviewModelController.chosenQuestions[currentQuestionIndex]
         renderQuestion(question: nextQuestion)
     }
-    
+
+    func repeatCurrentQuestion() {
+        let currentQuestion = interviewModelController.chosenQuestions[currentQuestionIndex]
+        playQuestionAudio(question: currentQuestion)
+    }
+
     func playQuestionAudio(question: Question) {
         Sound.stopAll()
         if let audioUrl = URL(string: question.audioUrl) {
