@@ -250,6 +250,9 @@
                                                     <constraint firstAttribute="height" constant="75" id="mcH-1u-ueS"/>
                                                 </constraints>
                                                 <state key="normal" title="Back"/>
+                                                <connections>
+                                                    <action selector="backButtonPressed:" destination="80G-05-Yhh" eventType="touchUpInside" id="IYi-YX-OhI"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQq-cG-aR9">
                                                 <rect key="frame" x="177.5" y="0.0" width="177.5" height="75"/>
@@ -257,6 +260,9 @@
                                                     <constraint firstAttribute="height" constant="75" id="EgC-Ph-hzJ"/>
                                                 </constraints>
                                                 <state key="normal" title="Next"/>
+                                                <connections>
+                                                    <action selector="nextButtonPressed:" destination="80G-05-Yhh" eventType="touchUpInside" id="wVM-0o-MEP"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -278,6 +284,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9B4-bu-2RT"/>
                     </view>
+                    <connections>
+                        <outlet property="interviewBackButton" destination="VuY-hr-vNN" id="TVi-iq-ooI"/>
+                        <outlet property="interviewNextButton" destination="AQq-cG-aR9" id="dI1-Bt-YJb"/>
+                        <outlet property="interviewTextLabel" destination="Pem-vE-zmJ" id="4CP-xn-M3t"/>
+                        <segue destination="prb-9B-auF" kind="show" identifier="interviewFinishedSegue" id="yp3-9C-Sno"/>
+                        <segue destination="gCW-eq-IHe" kind="show" identifier="interviewBackSegue" id="upo-gN-M5d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m1N-v0-27J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -320,6 +333,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="upo-gN-M5d"/>
         <segue reference="RsO-4E-KMJ"/>
     </inferredMetricsTieBreakers>
 </document>
