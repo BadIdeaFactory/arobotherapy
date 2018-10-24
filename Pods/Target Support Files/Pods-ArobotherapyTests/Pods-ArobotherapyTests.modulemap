@@ -1,0 +1,6 @@
+framework module Pods_ArobotherapyTests {
+  umbrella header "Pods-ArobotherapyTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
