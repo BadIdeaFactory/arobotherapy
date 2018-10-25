@@ -15,6 +15,8 @@ class InterviewModelController {
     var chosenPassage:Passage?
     var chosenQuestions: [Question] = []
     
+    var recordingModelController = RecordingModelController()
+    
     func generateScript() {
         loadData()
         
