@@ -24,6 +24,7 @@
 		D05C6E33216D2EFA002695F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D05C6E32216D2EFA002695F1 /* Assets.xcassets */; };
 		D05C6E36216D2EFA002695F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D05C6E34216D2EFA002695F1 /* LaunchScreen.storyboard */; };
 		D05C6E41216D2EFA002695F1 /* ArobotherapyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05C6E40216D2EFA002695F1 /* ArobotherapyTests.swift */; };
+		D098779A218269D50050E656 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0987799218269D50050E656 /* Assets.xcassets */; };
 		D0A947272177C40400F7D4CC /* InterviewModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A947262177C40400F7D4CC /* InterviewModelController.swift */; };
 		D0A9472A2177E4B400F7D4CC /* InterviewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A947292177E4B400F7D4CC /* InterviewProtocol.swift */; };
 /* End PBXBuildFile section */
@@ -62,6 +63,7 @@
 		D05C6E3C216D2EFA002695F1 /* ArobotherapyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArobotherapyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D05C6E40216D2EFA002695F1 /* ArobotherapyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArobotherapyTests.swift; sourceTree = "<group>"; };
 		D05C6E42216D2EFA002695F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0987799218269D50050E656 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0A947262177C40400F7D4CC /* InterviewModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewModelController.swift; sourceTree = "<group>"; };
 		D0A947292177E4B400F7D4CC /* InterviewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewProtocol.swift; sourceTree = "<group>"; };
 		D3D45BCDF2F83F2938DED3D9 /* Pods-ArobotherapyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArobotherapyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArobotherapyTests/Pods-ArobotherapyTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 		D05C6E1F216D2EF8002695F1 = {
 			isa = PBXGroup;
 			children = (
+				D0987799218269D50050E656 /* Assets.xcassets */,
 				D05C6E2A216D2EF8002695F1 /* Arobotherapy */,
 				D05C6E3F216D2EFA002695F1 /* ArobotherapyTests */,
 				D05C6E29216D2EF8002695F1 /* Products */,
@@ -269,6 +272,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D098779A218269D50050E656 /* Assets.xcassets in Resources */,
 				D039FAE1216EEC9200ADACA3 /* Library in Resources */,
 				D05C6E36216D2EFA002695F1 /* LaunchScreen.storyboard in Resources */,
 				D05C6E33216D2EFA002695F1 /* Assets.xcassets in Resources */,
@@ -533,16 +537,18 @@
 			baseConfigurationReference = E5A8F72FC69368A1AABB61B1 /* Pods-Arobotherapy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HK6DWCZ5GJ;
 				INFOPLIST_FILE = Arobotherapy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.biffud.Arobotherapy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.biffud.arobotherapy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -551,16 +557,18 @@
 			baseConfigurationReference = 775BA6ACE79DEF5C8BA487A6 /* Pods-Arobotherapy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HK6DWCZ5GJ;
 				INFOPLIST_FILE = Arobotherapy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.biffud.Arobotherapy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.biffud.arobotherapy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
