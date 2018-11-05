@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SwiftySound
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

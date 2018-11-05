@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		08F10A2A60493F727D6768F0 /* Pods_ArobotherapyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A08BDA8F47A897BEFA5533F /* Pods_ArobotherapyTests.framework */; };
-		9FB31959431AEA3706D296FF /* Pods_Arobotherapy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B5227915326D860B38A513 /* Pods_Arobotherapy.framework */; };
+		326D65CCC7FC0EBC067B10B9 /* Pods_ArobotherapyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 796400D53E11434F2D274A97 /* Pods_ArobotherapyTests.framework */; };
+		9C3E8E9EC260F0A54A119DD0 /* Pods_Arobotherapy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1601DE6A1706181739E7BDF /* Pods_Arobotherapy.framework */; };
 		D017EDE52180C9E900488619 /* RecordingModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D017EDE42180C9E900488619 /* RecordingModelController.swift */; };
 		D02C79EC216D52C800487826 /* PassageInstructionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02C79EB216D52C800487826 /* PassageInstructionViewController.swift */; };
 		D02C79EE216E547000487826 /* PassageRecordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02C79ED216E547000487826 /* PassageRecordingViewController.swift */; };
@@ -40,10 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6A08BDA8F47A897BEFA5533F /* Pods_ArobotherapyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArobotherapyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		775BA6ACE79DEF5C8BA487A6 /* Pods-Arobotherapy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arobotherapy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Arobotherapy/Pods-Arobotherapy.release.xcconfig"; sourceTree = "<group>"; };
-		A3B5227915326D860B38A513 /* Pods_Arobotherapy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Arobotherapy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BD4B77F8DC48F4991821B0F8 /* Pods-ArobotherapyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArobotherapyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArobotherapyTests/Pods-ArobotherapyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3699DB18C67CE85FF8050F9C /* Pods-Arobotherapy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arobotherapy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Arobotherapy/Pods-Arobotherapy.release.xcconfig"; sourceTree = "<group>"; };
+		796400D53E11434F2D274A97 /* Pods_ArobotherapyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArobotherapyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C33CA294D6167D5E410FDF23 /* Pods-ArobotherapyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArobotherapyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArobotherapyTests/Pods-ArobotherapyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D017EDE42180C9E900488619 /* RecordingModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingModelController.swift; sourceTree = "<group>"; };
 		D02C79EB216D52C800487826 /* PassageInstructionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassageInstructionViewController.swift; sourceTree = "<group>"; };
 		D02C79ED216E547000487826 /* PassageRecordingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassageRecordingViewController.swift; sourceTree = "<group>"; };
@@ -66,8 +65,9 @@
 		D0987799218269D50050E656 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0A947262177C40400F7D4CC /* InterviewModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewModelController.swift; sourceTree = "<group>"; };
 		D0A947292177E4B400F7D4CC /* InterviewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewProtocol.swift; sourceTree = "<group>"; };
-		D3D45BCDF2F83F2938DED3D9 /* Pods-ArobotherapyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArobotherapyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArobotherapyTests/Pods-ArobotherapyTests.release.xcconfig"; sourceTree = "<group>"; };
-		E5A8F72FC69368A1AABB61B1 /* Pods-Arobotherapy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arobotherapy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Arobotherapy/Pods-Arobotherapy.debug.xcconfig"; sourceTree = "<group>"; };
+		D10A7FE32919A3818379F134 /* Pods-ArobotherapyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArobotherapyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArobotherapyTests/Pods-ArobotherapyTests.release.xcconfig"; sourceTree = "<group>"; };
+		E1601DE6A1706181739E7BDF /* Pods_Arobotherapy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Arobotherapy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6CD65DEBEEFFD5202D442DA /* Pods-Arobotherapy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arobotherapy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Arobotherapy/Pods-Arobotherapy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FB31959431AEA3706D296FF /* Pods_Arobotherapy.framework in Frameworks */,
+				9C3E8E9EC260F0A54A119DD0 /* Pods_Arobotherapy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,29 +83,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08F10A2A60493F727D6768F0 /* Pods_ArobotherapyTests.framework in Frameworks */,
+				326D65CCC7FC0EBC067B10B9 /* Pods_ArobotherapyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		78CF6778803D3B2B15771BF6 /* Pods */ = {
+		B25E0E8ECA77157EEAB71AEF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E5A8F72FC69368A1AABB61B1 /* Pods-Arobotherapy.debug.xcconfig */,
-				775BA6ACE79DEF5C8BA487A6 /* Pods-Arobotherapy.release.xcconfig */,
-				BD4B77F8DC48F4991821B0F8 /* Pods-ArobotherapyTests.debug.xcconfig */,
-				D3D45BCDF2F83F2938DED3D9 /* Pods-ArobotherapyTests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		85A13A6469E5B8109D0451DD /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A3B5227915326D860B38A513 /* Pods_Arobotherapy.framework */,
-				6A08BDA8F47A897BEFA5533F /* Pods_ArobotherapyTests.framework */,
+				E1601DE6A1706181739E7BDF /* Pods_Arobotherapy.framework */,
+				796400D53E11434F2D274A97 /* Pods_ArobotherapyTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -141,8 +130,8 @@
 				D05C6E2A216D2EF8002695F1 /* Arobotherapy */,
 				D05C6E3F216D2EFA002695F1 /* ArobotherapyTests */,
 				D05C6E29216D2EF8002695F1 /* Products */,
-				78CF6778803D3B2B15771BF6 /* Pods */,
-				85A13A6469E5B8109D0451DD /* Frameworks */,
+				EA0F9D4E2D9F5984555385F0 /* Pods */,
+				B25E0E8ECA77157EEAB71AEF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -188,6 +177,17 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		EA0F9D4E2D9F5984555385F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F6CD65DEBEEFFD5202D442DA /* Pods-Arobotherapy.debug.xcconfig */,
+				3699DB18C67CE85FF8050F9C /* Pods-Arobotherapy.release.xcconfig */,
+				C33CA294D6167D5E410FDF23 /* Pods-ArobotherapyTests.debug.xcconfig */,
+				D10A7FE32919A3818379F134 /* Pods-ArobotherapyTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -195,11 +195,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D05C6E45216D2EFA002695F1 /* Build configuration list for PBXNativeTarget "Arobotherapy" */;
 			buildPhases = (
-				DAA16D52694B0B756C37F16B /* [CP] Check Pods Manifest.lock */,
+				12A88E766AB76BE9C1E9DCDB /* [CP] Check Pods Manifest.lock */,
 				D05C6E24216D2EF8002695F1 /* Sources */,
 				D05C6E25216D2EF8002695F1 /* Frameworks */,
 				D05C6E26216D2EF8002695F1 /* Resources */,
-				580B74DDCA1E7D1487C95AB8 /* [CP] Embed Pods Frameworks */,
+				458B36D68354C7A792549212 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -214,7 +214,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D05C6E48216D2EFA002695F1 /* Build configuration list for PBXNativeTarget "ArobotherapyTests" */;
 			buildPhases = (
-				999B18B6352C26879B32B0BD /* [CP] Check Pods Manifest.lock */,
+				DA99E4AA3FB47E933B8D2619 /* [CP] Check Pods Manifest.lock */,
 				D05C6E38216D2EFA002695F1 /* Sources */,
 				D05C6E39216D2EFA002695F1 /* Frameworks */,
 				D05C6E3A216D2EFA002695F1 /* Resources */,
@@ -290,7 +290,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		580B74DDCA1E7D1487C95AB8 /* [CP] Embed Pods Frameworks */ = {
+		12A88E766AB76BE9C1E9DCDB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Arobotherapy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		458B36D68354C7A792549212 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -312,7 +334,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Arobotherapy/Pods-Arobotherapy-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		999B18B6352C26879B32B0BD /* [CP] Check Pods Manifest.lock */ = {
+		DA99E4AA3FB47E933B8D2619 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -328,28 +350,6 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-ArobotherapyTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DAA16D52694B0B756C37F16B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Arobotherapy-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -534,7 +534,7 @@
 		};
 		D05C6E46216D2EFA002695F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E5A8F72FC69368A1AABB61B1 /* Pods-Arobotherapy.debug.xcconfig */;
+			baseConfigurationReference = F6CD65DEBEEFFD5202D442DA /* Pods-Arobotherapy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -554,7 +554,7 @@
 		};
 		D05C6E47216D2EFA002695F1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 775BA6ACE79DEF5C8BA487A6 /* Pods-Arobotherapy.release.xcconfig */;
+			baseConfigurationReference = 3699DB18C67CE85FF8050F9C /* Pods-Arobotherapy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -574,7 +574,7 @@
 		};
 		D05C6E49216D2EFA002695F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BD4B77F8DC48F4991821B0F8 /* Pods-ArobotherapyTests.debug.xcconfig */;
+			baseConfigurationReference = C33CA294D6167D5E410FDF23 /* Pods-ArobotherapyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -595,7 +595,7 @@
 		};
 		D05C6E4A216D2EFA002695F1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D3D45BCDF2F83F2938DED3D9 /* Pods-ArobotherapyTests.release.xcconfig */;
+			baseConfigurationReference = D10A7FE32919A3818379F134 /* Pods-ArobotherapyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
