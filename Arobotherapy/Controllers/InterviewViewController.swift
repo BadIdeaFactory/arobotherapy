@@ -18,6 +18,8 @@ class InterviewViewController: UIViewController, InterviewProtocol {
     @IBOutlet weak var interviewNextButton: UIButton!
     @IBOutlet weak var interviewTextLabel: UILabel!
     
+    var sound: Sound?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         currentQuestionIndex = -1
@@ -77,11 +79,14 @@ class InterviewViewController: UIViewController, InterviewProtocol {
     }
 
     func playQuestionAudio(question: Question) {
-        Sound.stopAll()
         if let audioUrl = URL(string: question.audioUrl) {
-            Sound.play(url: audioUrl)
-            interviewModelController.recordingModelController.startRecording()
+            sound = Sound(url: audioUrl)
+            sound?.play(completion: audioFinished)
         }
+    }
+    
+    func audioFinished(didItWork: Bool) {
+        interviewModelController.recordingModelController.startRecording()
     }
     
     func renderQuestion(question: Question) {
