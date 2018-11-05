@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftySound
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,9 +15,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
         // Override point for customization after application launch.
         let interviewModelController = InterviewModelController()
         interviewModelController.loadData()
+        interviewModelController.recordingModelController.checkRecordPermission()
+        
+        // Set up SwiftySound
+        //Sound.category = .playAndRecord
         
         if let introViewController = window?.rootViewController as? IntroViewController {
             introViewController.interviewModelController = interviewModelController

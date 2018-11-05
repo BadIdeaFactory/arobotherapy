@@ -23,6 +23,11 @@ class InterviewViewController: UIViewController, InterviewProtocol {
         currentQuestionIndex = -1
         renderNextQuestion()
     }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        interviewModelController.recordingModelController.stopRecording()
+    }
+    
     // MARK: - Actions
     @IBAction func nextButtonPressed(_ sender: Any) {
         if(isInterviewFinished()) {
@@ -75,11 +80,13 @@ class InterviewViewController: UIViewController, InterviewProtocol {
         Sound.stopAll()
         if let audioUrl = URL(string: question.audioUrl) {
             Sound.play(url: audioUrl)
+            interviewModelController.recordingModelController.startRecording()
         }
     }
     
     func renderQuestion(question: Question) {
         interviewTextLabel.text = question.text
+        interviewModelController.recordingModelController.prepareQuestionRecording(index: currentQuestionIndex)
         playQuestionAudio(question: question)
     }
     

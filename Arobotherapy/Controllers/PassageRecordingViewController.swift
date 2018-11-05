@@ -16,9 +16,13 @@ class PassageRecordingViewController: UIViewController, InterviewProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(interviewModelController.chosenPassage)
-        print(interviewModelController.chosenPassage!.text)
         passageTextView.text = interviewModelController.chosenPassage!.text
+        interviewModelController.recordingModelController.preparePassageRecording()
+        interviewModelController.recordingModelController.startRecording()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        interviewModelController.recordingModelController.stopRecording()
     }
     
     // MARK: - Navigation
