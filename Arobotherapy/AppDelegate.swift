@@ -23,8 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Set up SwiftySound
         //Sound.category = .playAndRecord
         
-        if let introViewController = window?.rootViewController as? IntroViewController {
-            introViewController.interviewModelController = interviewModelController
+        
+        if var rootViewController = window?.rootViewController as? InterviewProtocol {
+            rootViewController.interviewModelController = interviewModelController
         }
         return true
     }

@@ -69,7 +69,7 @@ class RecordingModelController: NSObject, AVAudioRecorderDelegate {
         }
     }
     
-    private func newParticipant(participantId: String) {
+    func newParticipant(participantId: String) {
         self.participantId = participantId
     }
     
