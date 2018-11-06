@@ -9,6 +9,7 @@
 import UIKit
 
 class InterviewModelController {
+    var participantId: String = ""
     var passages: [Passage] = []
     var questionBlocks: [[Question]] = []
     

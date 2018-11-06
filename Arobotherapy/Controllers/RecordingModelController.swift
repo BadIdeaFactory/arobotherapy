@@ -16,7 +16,7 @@ class RecordingModelController: NSObject, AVAudioRecorderDelegate {
     private var currentTimeInterval: TimeInterval = 0.0
     private var recordPermission = false
     
-    private var interviewId = 0
+    private var participantId: String = ""
     private var questionIndex = 0
     private var version = 0
     private var currentFilename = ""
@@ -26,13 +26,13 @@ class RecordingModelController: NSObject, AVAudioRecorderDelegate {
     
     func preparePassageRecording() {
         let timestamp = Int(Date().timeIntervalSince1970)
-        currentFilename = String(interviewId) + "_" + String(timestamp) + "_passage_" + String(recordedPassages.count)
+        currentFilename = participantId + "_" + String(timestamp) + "_passage_" + String(recordedPassages.count)
         setupRecorder()
     }
     func prepareQuestionRecording(index: Int) {
         let timestamp = Int(Date().timeIntervalSince1970)
         questionIndex = index
-        currentFilename = String(interviewId) + "_" + String(timestamp) + "_question" + String(questionIndex) + "_" + String(recordedPassages.count)
+        currentFilename = participantId + "_" + String(timestamp) + "_question" + String(questionIndex) + "_" + String(recordedPassages.count)
         setupRecorder()
     }
 
@@ -69,8 +69,8 @@ class RecordingModelController: NSObject, AVAudioRecorderDelegate {
         }
     }
     
-    private func newInterview() {
-        interviewId += 1
+    private func newParticipant(participantId: String) {
+        self.participantId = participantId
     }
     
     private func setupRecorder() {
