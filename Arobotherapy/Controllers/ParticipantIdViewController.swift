@@ -40,7 +40,7 @@ class ParticipantIdViewController: UIViewController, InterviewProtocol {
 
     func triggerNextSegue() {
         if(participantIdField.text != "") {
-            interviewModelController.recordingModelController.newParticipant(participantIdField.text!)
+            interviewModelController.recordingModelController.newParticipant(participantId: participantIdField.text!)
             performSegue(withIdentifier: "participantIdViewNextSegue", sender: participantIdField)
         }
     }
