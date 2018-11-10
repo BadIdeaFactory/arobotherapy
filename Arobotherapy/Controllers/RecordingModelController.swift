@@ -21,8 +21,10 @@ class RecordingModelController: NSObject, AVAudioRecorderDelegate {
     private var version = 0
     private var currentFilename = ""
     
+    var qualityTime = 0
     var recordedQuestions = [[String]]()
     var recordedPassages = [String]()
+    var longestAnswers = [Int]()
     
     func preparePassageRecording() {
         let timestamp = Int(Date().timeIntervalSince1970)
@@ -30,10 +32,24 @@ class RecordingModelController: NSObject, AVAudioRecorderDelegate {
         setupRecorder()
     }
     func prepareQuestionRecording(index: Int) {
+        logTime(time: Int(audioRecorder.currentTime), index: index)
+        
         let timestamp = Int(Date().timeIntervalSince1970)
         questionIndex = index
         currentFilename = participantId + "_" + String(timestamp) + "_question" + String(questionIndex) + "_" + String(recordedPassages.count)
         setupRecorder()
+    }
+    
+    private func logTime(time: Int, index: Int) {
+        if(!longestAnswers.indices.contains(questionIndex)) {
+            longestAnswers.insert(0, at: questionIndex)
+        }
+        longestAnswers[questionIndex] = max(time, longestAnswers[questionIndex])
+        recalculateQualityTime()
+    }
+    
+    private func recalculateQualityTime() {
+        qualityTime = longestAnswers.reduce(0, +)
     }
 
     func checkRecordPermission() {
@@ -64,7 +80,6 @@ class RecordingModelController: NSObject, AVAudioRecorderDelegate {
         self.currentFilename = filename
         
         if audioRecorder != nil {
-            stopRecording()
             setupRecorder()
         }
     }
