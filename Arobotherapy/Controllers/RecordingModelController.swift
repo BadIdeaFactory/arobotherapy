@@ -17,27 +17,53 @@ class RecordingModelController: NSObject, AVAudioRecorderDelegate {
     private var recordPermission = false
     
     private var participantId: String = ""
-    private var questionIndex = 0
-    private var version = 0
-    private var currentFilename = ""
+    private var questionIndex: Int = 0
+    private var currentVersion: String = "0"
+    private var currentFilename: String = ""
+    
+    private var interviewModel: InterviewModelController?
     
     var qualityTime = 0
-    var recordedQuestions = [[String]]()
-    var recordedPassages = [String]()
+    var questionVersions = [Int]()
+    var passageVersion = 0
     var longestAnswers = [Int]()
     
+    func setInterviewModelController(interviewModel: InterviewModelController) {
+        self.interviewModel = interviewModel
+    }
+    
     func preparePassageRecording() {
-        let timestamp = Int(Date().timeIntervalSince1970)
-        currentFilename = participantId + "_" + String(timestamp) + "_passage_" + String(recordedPassages.count)
+        let timestamp: String = String(Int(Date().timeIntervalSince1970))
+        currentVersion = String(incrementPassageVersion())
+        let passageId: String = interviewModel!.chosenPassage!.id
+        currentFilename = participantId + "_passage-v" + currentVersion + "_" + passageId + "_" + timestamp
         setupRecorder()
     }
+    
     func prepareQuestionRecording(index: Int) {
         logTime(time: Int(audioRecorder.currentTime), index: index)
+        self.questionIndex = index
+
+        let timestamp: String = String(Int(Date().timeIntervalSince1970))
+        currentVersion = String(incrementQuestionVersion(index: index))
+        let questionId: String = interviewModel!.chosenQuestions[index].id
+        let questionIndex: String = String(index)
         
-        let timestamp = Int(Date().timeIntervalSince1970)
-        questionIndex = index
-        currentFilename = participantId + "_" + String(timestamp) + "_question" + String(questionIndex) + "_" + String(recordedPassages.count)
+        currentFilename = participantId + "_question-" + questionIndex + "-v" + currentVersion + "_" + questionId + "_" + timestamp
         setupRecorder()
+    }
+    
+    private func incrementQuestionVersion(index: Int) -> Int{
+        if(!questionVersions.indices.contains(index)) {
+            questionVersions.insert(0, at: index)
+        }
+        questionVersions[index] += 1
+        return questionVersions[index]
+    }
+    
+    private func incrementPassageVersion() -> Int{
+        passageVersion += 1
+        return passageVersion
     }
     
     private func logTime(time: Int, index: Int) {
