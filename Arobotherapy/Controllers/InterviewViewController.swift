@@ -18,10 +18,14 @@ class InterviewViewController: UIViewController, InterviewProtocol {
     @IBOutlet weak var interviewNextButton: UIButton!
     @IBOutlet weak var interviewTextLabel: UILabel!
     
+    @IBOutlet weak var interviewRepeatButton: UIButton!
     var sound: Sound?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        interviewBackButton.layer.cornerRadius = 4
+        interviewNextButton.layer.cornerRadius = 4
+        interviewRepeatButton.layer.cornerRadius = 4
         currentQuestionIndex = -1
         renderNextQuestion()
     }

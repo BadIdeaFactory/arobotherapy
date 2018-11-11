@@ -14,8 +14,14 @@ class PassageRecordingViewController: UIViewController, InterviewProtocol {
     // MARK: Properties
     @IBOutlet weak var passageTextView: UITextView!
     
+    @IBOutlet weak var backButton: UIButton!
+    
+    @IBOutlet weak var continueButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        backButton.layer.cornerRadius = 4
+        continueButton.layer.cornerRadius = 4
         passageTextView.text = interviewModelController.chosenPassage!.text
         interviewModelController.recordingModelController.preparePassageRecording()
         interviewModelController.recordingModelController.startRecording()
