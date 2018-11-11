@@ -16,9 +16,7 @@ class IntroViewController: UIViewController, InterviewProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        getStartedButton.layer.cornerRadius = 4
-        interviewModelController.generateScript()
-        
+        getStartedButton.layer.cornerRadius = 4        
         // Do any additional setup after loading the view, typically from a nib.
     }
     

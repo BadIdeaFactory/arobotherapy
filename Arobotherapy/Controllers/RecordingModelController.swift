@@ -17,16 +17,24 @@ class RecordingModelController: NSObject, AVAudioRecorderDelegate {
     private var recordPermission = false
     
     private var participantId: String = ""
-    private var questionIndex: Int = 0
     private var currentVersion: String = "0"
     private var currentFilename: String = ""
     
     private var interviewModel: InterviewModelController?
     
+    private var questionIndex: Int = 0
     var qualityTime = 0
     var questionVersions = [Int]()
     var passageVersion = 0
     var longestAnswers = [Int]()
+    
+    func resetInterview() {
+        questionIndex = 0
+        qualityTime = 0
+        questionVersions = [Int]()
+        passageVersion = 0
+        longestAnswers = [Int]()
+    }
     
     func setInterviewModelController(interviewModel: InterviewModelController) {
         self.interviewModel = interviewModel

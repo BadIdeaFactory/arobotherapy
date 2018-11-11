@@ -32,6 +32,11 @@ class ParticipantIdViewController: UIViewController, InterviewProtocol {
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        interviewModelController.generateScript()
+    }
+    
 
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
