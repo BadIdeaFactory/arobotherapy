@@ -15,7 +15,7 @@ class InterviewModelController {
     var chosenPassage:Passage?
     var chosenQuestions: [Question] = []
     
-    var recordingModelController = RecordingModelController()
+    var recordingModelController: RecordingModelController = RecordingModelController()
     
     func generateScript() {
         loadData()
@@ -41,6 +41,7 @@ class InterviewModelController {
                 mayHaveMore = true
             }
         }
+        recordingModelController.setInterviewModelController(interviewModel: self)
     }
     
     func loadData() {

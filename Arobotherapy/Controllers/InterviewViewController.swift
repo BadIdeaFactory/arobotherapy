@@ -75,6 +75,7 @@ class InterviewViewController: UIViewController, InterviewProtocol {
 
     func repeatCurrentQuestion() {
         let currentQuestion = interviewModelController.chosenQuestions[currentQuestionIndex]
+        interviewModelController.recordingModelController.prepareQuestionRecording(index: currentQuestionIndex)
         playQuestionAudio(question: currentQuestion)
     }
 
@@ -90,11 +91,11 @@ class InterviewViewController: UIViewController, InterviewProtocol {
     }
     
     func renderQuestion(question: Question) {
-        interviewTextLabel.text = question.text
         interviewModelController.recordingModelController.prepareQuestionRecording(index: currentQuestionIndex)
         
         // TODO: This 300 second timer should be configurable
         if(interviewModelController.recordingModelController.qualityTime < 300) {
+            interviewTextLabel.text = question.text
             playQuestionAudio(question: question)
         } else {
             triggerNextSegue()
