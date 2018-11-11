@@ -14,6 +14,7 @@ class ParticipantIdViewController: UIViewController, InterviewProtocol {
     var interviewModelController:InterviewModelController = InterviewModelController()
     @IBOutlet weak var participantIdField: UITextField!
     
+    @IBOutlet weak var setIdButton: UIButton!
     
     // Mark: - Actions
     @IBAction func textPrimaryActionTriggered(_ sender: Any) {
@@ -26,8 +27,14 @@ class ParticipantIdViewController: UIViewController, InterviewProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setIdButton.layer.cornerRadius = 4
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        interviewModelController.generateScript()
     }
     
 

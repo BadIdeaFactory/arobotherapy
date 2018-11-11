@@ -13,8 +13,11 @@ class InterviewInstructionViewController: UIViewController, InterviewProtocol {
     // MARK: Properties
     var interviewModelController:InterviewModelController = InterviewModelController()
 
+    @IBOutlet weak var okButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        okButton.layer.cornerRadius = 4
 
         // Do any additional setup after loading the view.
     }

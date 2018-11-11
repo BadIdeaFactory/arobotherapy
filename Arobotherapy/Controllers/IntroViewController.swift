@@ -12,11 +12,11 @@ class IntroViewController: UIViewController, InterviewProtocol {
 
     // MARK: Properties
     var interviewModelController:InterviewModelController = InterviewModelController()
+    @IBOutlet weak var getStartedButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        interviewModelController.generateScript()
-        
+        getStartedButton.layer.cornerRadius = 4        
         // Do any additional setup after loading the view, typically from a nib.
     }
     

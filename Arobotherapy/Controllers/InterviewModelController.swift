@@ -42,6 +42,8 @@ class InterviewModelController {
             }
         }
         recordingModelController.setInterviewModelController(interviewModel: self)
+        recordingModelController.resetInterview()
+
     }
     
     func loadData() {
