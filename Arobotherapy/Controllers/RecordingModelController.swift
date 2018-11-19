@@ -75,6 +75,7 @@ class RecordingModelController: NSObject, AVAudioRecorderDelegate {
     }
     
     private func logTime(time: Int, index: Int) {
+        print(time)
         if(!longestAnswers.indices.contains(questionIndex)) {
             longestAnswers.insert(0, at: questionIndex)
         }
@@ -126,6 +127,15 @@ class RecordingModelController: NSObject, AVAudioRecorderDelegate {
         checkRecordPermission()
         if recordPermission {
             do {
+                let audioSession = AVAudioSession.sharedInstance()
+                do {
+                    try audioSession.setCategory(
+                        AVAudioSession.Category.playAndRecord,
+                        mode: AVAudioSession.Mode.default)
+                } catch let error as NSError {
+                    print(error.description)
+                }
+                
                 let settings = [
                     AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
                     AVSampleRateKey: 44100,
