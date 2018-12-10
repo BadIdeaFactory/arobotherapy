@@ -49,7 +49,7 @@ class RecordingModelController: NSObject, AVAudioRecorderDelegate {
     }
     
     func prepareQuestionRecording(index: Int) {
-        logTime(time: Int(audioRecorder.currentTime), index: index)
+        logTime(time: Int(audioRecorder.currentTime), index: self.questionIndex)
         self.questionIndex = index
 
         let timestamp: String = String(Int(Date().timeIntervalSince1970))
@@ -75,10 +75,11 @@ class RecordingModelController: NSObject, AVAudioRecorderDelegate {
     }
     
     private func logTime(time: Int, index: Int) {
-        if(!longestAnswers.indices.contains(questionIndex)) {
-            longestAnswers.insert(0, at: questionIndex)
+        print(time)
+        if(!longestAnswers.indices.contains(index)) {
+            longestAnswers.insert(0, at: index)
         }
-        longestAnswers[questionIndex] = max(time, longestAnswers[questionIndex])
+        longestAnswers[index] = max(time, longestAnswers[index])
         recalculateQualityTime()
     }
     
@@ -132,17 +133,35 @@ class RecordingModelController: NSObject, AVAudioRecorderDelegate {
                     AVNumberOfChannelsKey: 2,
                     AVEncoderAudioQualityKey: AVAudioQuality.high.rawValue
                 ]
+                
                 audioRecorder = try AVAudioRecorder(url: fileUrl(), settings: settings)
                 audioRecorder.delegate = self
                 audioRecorder.isMeteringEnabled = true
                 audioRecorder.prepareToRecord()
             }
-            catch {}
+            catch let error as NSError {
+                print(error.description)
+            }
+            
         }
     }
     
+    func ensureRecordingSession() {
+        
+    }
+    
     func startRecording() {
+        do {
+            let audioSession = AVAudioSession.sharedInstance()
+            try audioSession.setCategory(
+                AVAudioSession.Category.playAndRecord,
+                mode: AVAudioSession.Mode.default)
+        }
+        catch let error as NSError {
+            print(error.description)
+        }
         audioRecorder.record()
+        print(audioRecorder.isRecording)
     }
 
     func stopRecording() {

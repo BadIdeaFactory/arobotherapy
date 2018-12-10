@@ -28,8 +28,8 @@ class InterviewViewController: UIViewController, InterviewProtocol {
         interviewRepeatButton.layer.cornerRadius = 4
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         currentQuestionIndex = -1
         renderNextQuestion()
     }
@@ -69,7 +69,6 @@ class InterviewViewController: UIViewController, InterviewProtocol {
         }
         let nextQuestion = interviewModelController.chosenQuestions[currentQuestionIndex]
         renderQuestion(question: nextQuestion)
-
     }
     
     func renderPreviousQuestion() {
