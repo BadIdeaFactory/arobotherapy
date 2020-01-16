@@ -23,16 +23,18 @@ class RecordingModelController: NSObject, AVAudioRecorderDelegate {
     private var interviewModel: InterviewModelController?
     
     private var questionIndex: Int = 0
+    private var passageIndex: Int = 0
     var qualityTime = 0
     var questionVersions = [Int]()
-    var passageVersion = 0
+    var passageVersions = [Int]()
     var longestAnswers = [Int]()
     
     func resetInterview() {
+        passageIndex = 0
         questionIndex = 0
         qualityTime = 0
         questionVersions = [Int]()
-        passageVersion = 0
+        passageVersions = [Int]()
         longestAnswers = [Int]()
     }
     
@@ -40,11 +42,14 @@ class RecordingModelController: NSObject, AVAudioRecorderDelegate {
         self.interviewModel = interviewModel
     }
     
-    func preparePassageRecording() {
+    func preparePassageRecording(index: Int) {
+        self.passageIndex = index
+        
         let timestamp: String = String(Int(Date().timeIntervalSince1970))
-        currentVersion = String(incrementPassageVersion())
-        let passageId: String = interviewModel!.chosenPassage!.id
-        currentFilename = participantId + "_passage-v" + currentVersion + "_" + passageId + "_" + timestamp
+        currentVersion = String(incrementPassageVersion(index: index))
+        let passageId: String = interviewModel!.chosenPassages[index].id
+        let passageIndex: String = String(index)
+        currentFilename = participantId + "_passage-" + passageIndex + "-v" + currentVersion + "_" + passageId + "_" + timestamp
         setupRecorder()
     }
     
@@ -69,9 +74,12 @@ class RecordingModelController: NSObject, AVAudioRecorderDelegate {
         return questionVersions[index]
     }
     
-    private func incrementPassageVersion() -> Int{
-        passageVersion += 1
-        return passageVersion
+    private func incrementPassageVersion(index: Int) -> Int{
+        if(!passageVersions.indices.contains(index)) {
+            passageVersions.insert(0, at: index)
+        }
+        passageVersions[index] += 1
+        return passageVersions[index]
     }
     
     private func logTime(time: Int, index: Int) {

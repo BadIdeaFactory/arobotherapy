@@ -12,18 +12,18 @@ class InterviewModelController {
     var passages: [Passage] = []
     var questionBlocks: [[Question]] = []
     
-    var chosenPassage:Passage?
+    var chosenPassages: [Passage] = []
     var chosenQuestions: [Question] = []
     
     var recordingModelController: RecordingModelController = RecordingModelController()
     
     func generateScript() {
         loadData()
-        
-        // Select exactly one passage
-        if(passages.count > 0) {
-            self.chosenPassage = passages.randomElement()!
-        }
+
+        // We want to use all passages
+        // TODO: In the past this was not the logic; if it changes again we should
+        // make passage selection process configurable
+        self.chosenPassages = passages
         
         // Iterate through the questions to generate the script
         var questionPool = questionBlocks
