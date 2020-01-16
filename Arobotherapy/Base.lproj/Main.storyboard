@@ -132,7 +132,6 @@
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epl-7u-bb5">
                                         <rect key="frame" x="0.0" y="0.0" width="355" height="457"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -150,7 +149,7 @@
                                                     <color key="titleColor" red="0.98837751259999995" green="0.98947216149999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="XJp-3W-j68" kind="show" id="RsO-4E-KMJ"/>
+                                                    <action selector="backButtonPressed:" destination="QOC-dG-YDS" eventType="touchUpInside" id="zrR-Kc-U7I"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyE-vR-H68">
@@ -164,7 +163,7 @@
                                                     <color key="titleColor" red="0.98837751259999995" green="0.98947216149999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="gCW-eq-IHe" kind="show" id="xfi-wx-gLz"/>
+                                                    <action selector="continueButtonPressed:" destination="QOC-dG-YDS" eventType="touchUpInside" id="EdR-gf-XOt"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -188,11 +187,13 @@
                         <outlet property="backButton" destination="iEY-vw-Mce" id="FBw-tY-ix4"/>
                         <outlet property="continueButton" destination="gyE-vR-H68" id="myi-kb-K4S"/>
                         <outlet property="passageTextView" destination="epl-7u-bb5" id="tl0-Pl-dXZ"/>
+                        <segue destination="gCW-eq-IHe" kind="show" identifier="passagesFinishedSegue" id="epe-vL-JNP"/>
+                        <segue destination="XJp-3W-j68" kind="show" identifier="passageBackSegue" id="adY-Yf-tlX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Cc-eh-aiF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1372" y="132.68365817091455"/>
+            <point key="canvasLocation" x="1370" y="133"/>
         </scene>
         <!--Interview Instruction View Controller-->
         <scene sceneID="yET-FC-h0F">
@@ -339,7 +340,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m1N-v0-27J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2815" y="140"/>
+            <point key="canvasLocation" x="2839" y="133"/>
         </scene>
         <!--Thank You View Controller-->
         <scene sceneID="V3w-aU-ikw">
@@ -375,7 +376,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xvR-qg-dU9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3582" y="140"/>
+            <point key="canvasLocation" x="3583" y="133"/>
         </scene>
         <!--Participant Id View Controller-->
         <scene sceneID="TeZ-qB-AU1">
@@ -457,7 +458,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="upo-gN-M5d"/>
-        <segue reference="SiK-8a-usr"/>
+        <segue reference="epe-vL-JNP"/>
+        <segue reference="adY-Yf-tlX"/>
     </inferredMetricsTieBreakers>
 </document>
