@@ -19,6 +19,9 @@ class InterviewModelController {
     
     func generateScript() {
         loadData()
+        
+        // Clear out any previous script
+        self.chosenQuestions = []
 
         // We want to use all passages
         // TODO: In the past this was not the logic; if it changes again we should
@@ -43,7 +46,6 @@ class InterviewModelController {
         }
         recordingModelController.setInterviewModelController(interviewModel: self)
         recordingModelController.resetInterview()
-
     }
     
     func loadData() {
@@ -55,6 +57,8 @@ class InterviewModelController {
         if(passages.count != 0) {
             return
         }
+        // Just to be defensive, reset the passages
+        passages = []
 
         let path = Bundle.main.resourcePath! + "/Library/Passages"
         let items = getItemsInPath(path: path)
@@ -73,6 +77,9 @@ class InterviewModelController {
         if(!questionBlocks.isEmpty) {
             return
         }
+        // Just to be defensive, reset the question blocks
+        questionBlocks = []
+        
         // We need to initialize the zero index since it is a special case
         questionBlocks.append([])
         
